@@ -815,7 +815,7 @@ color: #d5d6d7;
 	border: none;
 	border-bottom: 1px solid#d5d6d7;
 	font-size: 15px;
-	color: #d5d6d7;
+	color: #333;
 	text-transform: capitalize;
 	padding: 10px 0;
 }
@@ -828,13 +828,14 @@ color: #d5d6d7;
 	resize: none;
 	border-bottom: 1px solid#d5d6d7;
 	font-size: 15px;
-	color: #d5d6d7;
+	color: #333;
 	text-transform: capitalize;
 	padding: 10px 0;
 	height: 2.8em;
 }
 .contactgrid2 {
 	padding: 2em 0 0 17em;
+	margin:auto;
 }
 .contactgrid2 input[type="button"] {
 	color: #f0c514;
@@ -847,6 +848,25 @@ color: #d5d6d7;
 .contactgrid2 input[type="button"]:hover {
 	color: #d5d6d7;
 }
+/* Dapo's edit */
+.contactgrid3 {
+	width:150px;
+	margin:auto;
+	text-align: center;
+}
+.contactgrid3 input[type="button"] {
+	color: #ccc;
+	background: none;
+	border: none;
+	font-size:18px;
+	font-weight: bold;
+	outline: none;
+	text-transform: uppercase;
+}
+.contactgrid3 input[type="button"]:hover {
+	color: #fff;
+}
+
 .footer-bottom {
 	
 	text-align: center;
@@ -1701,6 +1721,17 @@ color: #d5d6d7;
 		width: 90%;
 		margin:auto;
 		max-width: 550px;
+		height: 60vh;
+		border-radius: 7px;
+		transition: 0.5s;
+	}
+	.enti-map:hover{
+		border:2px solid #333;
+	}
+	.in-map{
+		width:100%;
+		height: 100%;
+		border-radius:7px;
 	}
 	.street-view{
 		min-height: 100vh;
@@ -1738,4 +1769,7 @@ color: #d5d6d7;
 	.box-shad{
 		border-radius:5px;
 		box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+	}
+	.centered{
+		text-align: center;
 	}
