@@ -110,7 +110,7 @@ class personaldataController extends AppBaseController
 
         }
 
-        $email = 'jamitex4life@yahoo.co.uk';
+        $email = 'olayinka.binuyo@okbcoy.com.ng';
         $f_name = \Auth::user()->firstname;
         $l_name = \Auth::user()->surname;
         $phone = \Auth::user()->phone;

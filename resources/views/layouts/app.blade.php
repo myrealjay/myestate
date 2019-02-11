@@ -27,6 +27,24 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     @yield('css')
+
+    <script>
+    function Clickheretoprint()
+    { 
+    var disp_setting="toolbar=yes,location=no,directories=yes,menubar=yes,"; 
+        disp_setting+="scrollbars=yes,width=400, height=400, left=100, top=25"; 
+    var content_vlue = document.getElementById("print_content").innerHTML; 
+    
+    var docprint=window.open("","",disp_setting); 
+    docprint.document.open(); 
+    docprint.document.write('<html><head><title>Inel Power System</title>'); 
+    docprint.document.write('</head><body onLoad="self.print()" style="width: 400px; font-size:12px; font-family:arial;">');          
+    docprint.document.write(content_vlue);          
+    docprint.document.write('</body></html>'); 
+    docprint.document.close(); 
+    docprint.focus(); 
+    }
+</script>
 </head>
 
 <body class="skin-blue sidebar-mini">

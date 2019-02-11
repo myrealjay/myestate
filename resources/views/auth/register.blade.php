@@ -56,10 +56,7 @@
 				<a href="#"><i class="icon2"></i></a>
 				<!--<a href="#"><i class="icon3"></i></a>-->
 				<a href="#"><i class="icon4"></i></a>
-				<!--<a href="#"><i class="icon5"></i></a>
-				<a href="#"><i class="icon6"></i></a>
-				<a href="#"><i class="icon7"></i></a>
-				<a href="#"><i class="icon8"></i></a>-->
+				
 			</div>
 			<div class="contact">
             <form method="post" action="{{ url('/register') }}">
@@ -99,7 +96,7 @@
             </div>
                 
                 <div class="col-md-4 contactgrid">
-				<input name="dob" type="text" class="text" value=" dob" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' dob';} " value="{{ old('dob') }}" required>
+				<input name="dob" type="text" class="text" value=" Date of birth" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Date of birth';} " value="{{ old('dob') }}" required>
                 @if ($errors->has('dob'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('dob') }}</strong>
@@ -107,7 +104,7 @@
                 @endif        
             </div>
                 <div class="col-md-4 contactgrid">
-				<input name="pob" type="text" class="text" value=" pob" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' pob';} " value="{{ old('pob') }}" required>
+				<input name="pob" type="text" class="text" value=" Place of birth" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Place of birth';} " value="{{ old('pob') }}" required>
                 @if ($errors->has('pob'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('pob') }}</strong>
