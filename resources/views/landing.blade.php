@@ -102,10 +102,9 @@
     <div class ="row conga">
         <div class="col-md-6 few-words">
             <div class="floter">
-                <h1>lurem ipsum</h1>
+                <h1>Surrounded with serene environment for family living</h1>
                 <div class="transe-text">
-                    content content content content content content content content content content content content content content content
-                    content content content content content content content content content content content content content content content
+                    Welcome to Bethel Estate, an exceptional new development on the fringes of the picturesque Ikorodu Town of Lagos. Here, you can choose from a carefully-designed collection of three or four bedroom homes, with a BQ. Combined with an outstanding location, these attractive new homes offer you and your family the opportunity to step straight into a country lifestyle.
                 </div>
             </div>
         </div>
@@ -147,38 +146,39 @@
 			<div class="container"> 
 			<div class="services-header">
 				<h3><span>[</span> Facilities <span>]</span></h3>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+					<p>If you’ve dreamed of exchanging traffic and busy streets for a good township idyll, Bethel Estate is just what you've been waiting for.<br>
+					Owode Onirin, Owode Elede <b>(and others as listed by google map)</b>, just minutes' away, marries charm and convenience, providing a diverse range of shops and mini mall selling everything from everyday essentials to the ‘little luxuries’ that bring pleasure to your day.  </p>
 			</div>
 			<div class="services-sectiongrids">
 				<div class="col-md-4 services-grid">
 					<img src="images/football.jpg" alt="" class="utility-image"/>
 					<h4>Football Field</h4>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+					<p>Quickly relieve the day to day stress with a serene burnout field that is easily accessible.</p>
 				</div>
 				<div class="col-md-4 services-grid">
 					<img src="images/tennis.jpg" alt="" class="utility-image"/>
 					<h4>Tennis Court</h4>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+					<p>A life time sport for the children, teenager, aged, men, women in short, this tennis is a game for all.</p>
 				</div>
 				<div class="col-md-4 services-grid">
 					<img src="images/sewage.jpg" alt="" class="utility-image"/>
 					<h4>Central Sewage system</h4>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+					<p>Our central sewage system serves as a preservation to the natural environment and protect public health.</p>
                 </div>
                 <div class="col-md-4 services-grid">
 					<img src="images/power.jpg" alt="" class="utility-image"/>
 					<h4>Electricity Supply</h4>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+					<p>Our electricity supply is constant and always available 24/7, its 100% available and reliable.</p>
 				</div>
 				<div class="col-md-4 services-grid">
 					<img src="images/water.jpg" alt="" class="utility-image"/>
 					<h4>Treated Water Supply</h4>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+					<p>Our water tratement plant remains second to none, we can guarantee you the purest as your healt is our priority.</p>
 				</div>
 				<div class="col-md-4 services-grid">
 					<img src="images/road.jpg" alt="" class="utility-image"/>
 					<h4>Good Roads and Drainage</h4>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+					<p>The drainage system ensure there is no water lodging during rainy season while good roads add to the proximity of your moverment.</p>
 				</div>
 				<div class="clearfix"></div>
 				<!--<div class="arrow1">
@@ -238,8 +238,9 @@
             </div>
             <div class="site-locat-info">
                 <h2>Info</h2>
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p> 
-                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+                <p>With the proposed Forth Mainland Bridge within reach, you can be rest assured that Laggos Island is withing reach. Mile 12 Market affords you an ample opportunity to get all what you need within reach ranging from daily necessity which are foodstuffs to clothing, groceries, household equipment and lots more<br> A Gas plant within easy reach ensure you don't run out of gas. <br>
+					In the pretty, serene environment, discover delightful shops, quirky boutiques and mouth-watering collection of eateries, Bars where you can easily relax after a long day at work. 
+					Bethel estate is central to both Island and Mainland. Do you have something important doing at the Island, there is no gainsaying that you will be bothered about the heavy traffic on Lagos roads, Bethel estate has guard against this as you will easily get to the Island in less than an hour drive. </p>
             </div>
         </div>
     </div>
