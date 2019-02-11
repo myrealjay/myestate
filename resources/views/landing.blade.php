@@ -294,7 +294,7 @@
 			<div class="container"> 
 			<div class="contact-header">
 				<h3><span>[</span> Purchase <span>]</span></h3>
-					<p>sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+					<p>Bethel estate remains second to none, click the <b>BUY NOW</b> button below to place an order for any of the teraces. </p>
 			</div>
 			<div class="social-icon">
 				<a href="#"><i class="icon1"></i></a>
