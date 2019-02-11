@@ -308,7 +308,7 @@
 			</div>
 			<div class="contact">
 				<div class="contactgrid3">
-				<a href="#"><input type="button" value="[buy now]"></a>
+				<a href="{{ route('register') }}"><input type="button" value="[buy now]"></a>
 			   </div>
 			   <div class="clearfix"></div>
 				</div>

@@ -32,9 +32,9 @@
 		   	<span class="menu"> </span>
 			<ul>
 			 	<nav class="cl-effect-5">
-				<li><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
+				<li><a href="/" class="scroll"><span data-hover="Home">home</span></a></li>
                 <li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
-				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
+				<li><a class="active"  href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
 				</nav>
 			 </ul>
 			 </div>

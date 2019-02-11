@@ -32,8 +32,8 @@
 		   	<span class="menu"> </span>
 			<ul>
 			 	<nav class="cl-effect-5">
-				<li><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
-                <li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
+				<li><a href="/" class="scroll"><span data-hover="Home">home</span></a></li>
+                <li><a class="active" href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
 				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
 				</nav>
 			 </ul>
@@ -52,7 +52,7 @@
 					<p>login to complete the purchasing process</p>
 			</div>
 			
-			<div class="contact" style="min-height:320px; padding-top:70px;">
+			<div class="contact" style="min-height:400px; padding-top:70px;">
             <form method="post" action="{{ url('/login') }}">
 
                 {!! csrf_field() !!}
