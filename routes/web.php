@@ -21,3 +21,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('personaldatas', 'personaldataController');
+
+Route::post('search', 'personaldataController@search');
