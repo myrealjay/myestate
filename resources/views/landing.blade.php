@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 <title>Bethel Estate</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +49,8 @@
 				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
 				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
 				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
-				<li><a href="#contact" class="scroll"><span data-hover="purchase">purchase</span></a></li>
+				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
+				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
 				</nav>
 			 </ul>
 			 </div>
