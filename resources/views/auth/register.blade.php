@@ -32,10 +32,8 @@
 		   	<span class="menu"> </span>
 			<ul>
 			 	<nav class="cl-effect-5">
-				<li><a class="active" href="#home" class="scroll"><span data-hover="Home">home</span></a></li>
-				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
-				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
-				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
+				<li><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
+                <li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
 				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
 				</nav>
 			 </ul>
@@ -179,7 +177,7 @@
             </div>
 
 				<div class="col-md-4 contactgrid2">
-				<input type="submit" value="[Register]">
+				<input type="submit" value="Register" class="mybutton btn btn-primary" style="width:120px;">
 			   </div>
 			   <div class="clearfix"></div>
                 </div>

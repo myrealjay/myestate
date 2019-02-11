@@ -45,7 +45,7 @@
 		   	<span class="menu"> </span>
 			<ul>
 			 	<nav class="cl-effect-5">
-				<li><a class="active" href="#home" class="scroll"><span data-hover="Home">home</span></a></li>
+				<li><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
 				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
 				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
 				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
@@ -253,20 +253,32 @@
             <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p> 
             <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
         </div>
-			<div class="about-sectiongrids">
-				<div class="col-md-6 about-leftgrid">
-					<div class="enti-map">
-                        <img width="100%" src="{{ asset('images/map.jpg') }}">
-                    </div>
-	</div>
-	<div class="col-md-6 about-rightgrid">
-		<div class="write-up">
-            <h2>Know more about Bethel estate</h2>
-            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p> 
-            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+        <div class="about-sectiongrids">
+            <div class="col-md-6 about-leftgrid">
+                <div class="enti-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1844.6453110003504!2d3.4060780871917817!3d6.604411342208203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzYnMTUuMCJOIDPCsDI0JzI0LjkiRQ!5e0!3m2!1sen!2sng!4v1549884769091" class="in-map" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+	    	</div>
+        <div class="col-md-6 about-rightgrid">
+            <div class="write-up">
+                <div class="centered">
+                    Need to make an enquiry?
+                </div>
+                <div class="contactgrid">
+                <input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
+                </div>
+                <div class="contactgrid">
+                <input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
+                </div>
+                <div class="contactgrid1">
+                <textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+                </div>
+                <div class="contactgrid2">
+                <input type="button" value="[send message]">
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="clearfix"></div>
+        <div class="clearfix"></div>
 	</div>
 	<div class="arrow1">
 	<a href="#contact" class="scroll"><img src="images/arrow1.png" alt=""/></a>
@@ -276,7 +288,6 @@
     </div>
     
         <!--
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15853.47904470335!2d3.393949737594087!3d6.60088677362213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93205ae52ac3%3A0x214d8378cdcbc9e1!2sMile+12%2C+Lagos!5e0!3m2!1sen!2sng!4v1549821983748" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         -->
 
 	<div class="footer-section" id="contact" id="contact">
@@ -296,20 +307,8 @@
 				<a href="#"><i class="icon8"></i></a>-->
 			</div>
 			<div class="contact">
-                <div class="col-md-4 contactgrid">
-				<input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
-                </div>
-				<div class="col-md-4 contactgrid">
-				<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
-				</div>
-				<div class="col-md-4 contactgrid">
-				<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
-				</div>
-				<div class="col-md-8 contactgrid1">
-				<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
-				</div>
-				<div class="col-md-4 contactgrid2">
-				<input type="button" value="[send message]">
+				<div class="contactgrid3">
+				<a href="#"><input type="button" value="[buy now]"></a>
 			   </div>
 			   <div class="clearfix"></div>
 				</div>
