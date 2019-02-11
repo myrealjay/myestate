@@ -166,7 +166,10 @@ nav a:focus {
 	top: 40%;
 	left: 25%;
 	text-align: center;
-
+	transition:0.5s
+}
+.banner_center:hover {
+	transform: scale(1.2);
 }
 .banner_center h1 {
 	color: #eee;

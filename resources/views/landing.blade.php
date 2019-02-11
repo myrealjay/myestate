@@ -116,11 +116,10 @@
             <div class="tab-o-c">
                 <h1>Contents<h1>
                 <ul>
-                    <li>Content</li>
-                    <li>Content</li>
-                    <li>Content</li>
-                    <li>Content</li>
-                    <li>Content</li>
+                    <li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
+				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
+				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
+				<li><a href="#contact" class="scroll"><span data-hover="purchase">purchase</span></a></li>
                 </ul>
                 <img width="100%" src="{{ asset('images/multi-image.jpg') }}">
             </div>
@@ -132,8 +131,8 @@
                 <img width="100%" src="{{ asset('images/logo2.png') }}">
             </div>
             <h1>Bethel Estate</h1>
-            <p>Content</p><br>
-            <h1>content content content content</h1>
+            <!--<p>Content</p><br>-->
+            <h1>Surrounded with serene environment for family living</h1>
         </div>
         <div class="col-md-6">
             <div class="spacer"></div>
@@ -241,7 +240,7 @@
                 <h2>Info</h2>
                 <p>With the proposed Forth Mainland Bridge within reach, you can be rest assured that Laggos Island is withing reach. Mile 12 Market affords you an ample opportunity to get all what you need within reach ranging from daily necessity which are foodstuffs to clothing, groceries, household equipment and lots more<br> A Gas plant within easy reach ensure you don't run out of gas. <br>
 					In the pretty, serene environment, discover delightful shops, quirky boutiques and mouth-watering collection of eateries, Bars where you can easily relax after a long day at work. 
-					Bethel estate is central to both Island and Mainland. Do you have something important doing at the Island, there is no gainsaying that you will be bothered about the heavy traffic on Lagos roads, Bethel estate has guard against this as you will easily get to the Island in less than an hour drive. </p>
+					Bethel estate is central to both Island and Mainland with just an hour drive to the Island. </p>
             </div>
         </div>
     </div>
@@ -250,8 +249,9 @@
 	<div class="container">
 		<div class="about-header">
 			<h3><span>[</span> Find Us <span>]</span></h3>
-            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p> 
-            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+            <p><i class="fa fa-map-marker"></i> Owode Elede, Along Ikorodu Road, Lagos, Nigeria. </p> 
+            <p><i class="fa fa-phone"></i> +2348000000000000, +2348000000000 </p> 
+            <p><i class="fa fa-envelope"></i> contact@bethelestate.com.ng </p> 
         </div>
         <div class="about-sectiongrids">
             <div class="col-md-6 about-leftgrid">
@@ -340,4 +340,5 @@
 	
 	
 </body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </html>
