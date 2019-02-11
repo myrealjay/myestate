@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bethel Estate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Housing, Realestate, OKB" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	    
+<script src="js/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="icon" href="images/favicon.png" type="image/png">
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+	 <!------ Light Box ------>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery.swipebox.min.js"></script> 
+    <script type="text/javascript">
+		jQuery(function($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+    <!------ Eng Light Box ------>	
+
+</head>
+<body>
+<div class="header" id="head">	
+      <div class="container"> 
+         <div class="header-top">
+      		 <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                <!--<h2>Bethel</h2>-->
+			 </div>
+		   <div class="top-menu">
+		   	<span class="menu"> </span>
+			<ul>
+			 	<nav class="cl-effect-5">
+				<li><a class="active" href="#home" class="scroll"><span data-hover="Home">home</span></a></li>
+				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
+				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
+				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
+				<li><a href="#contact" class="scroll"><span data-hover="purchase">purchase</span></a></li>
+				</nav>
+			 </ul>
+			 </div>
+			 <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+            $(".top-menu ul").slideToggle("slow" , function(){
+            });
+		 });
+		 </script>
+			<div class="clearfix"></div>
+		 </div>  
+		  <div class="index-banner">
+       	   <div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	    <div class="banner-wrap">
+				   	       	<div class="banner_center">
+				   		 		<h1>Welcome to Bethel estate</h1> 
+                                <img src="{{ asset('images/crop.jpg') }}"  class="top-imgs">
+				   		 	</div>
+				   		</div>
+					</article>
+				   <article style="position: relative; width: 100%; opacity: 1;"> 
+				   	   	<div class="banner-wrap">
+				   	      <div class="banner_center">
+				   		 		<h1>Take a tour of our estate</h1> 
+				   		 		<img src="{{ asset('images/crop2.jpg') }}"  class="top-imgs">
+				   		 	</div>
+				   		</div>
+				   </article>
+				   <article style="position: absolute; width: 100%; opacity: 0;">
+				   	  	<div class="banner-wrap">
+				   	       <div class="banner_center">
+				   		 		<h1>A rare opportunity</h1> 
+				   		 		<img src="{{ asset('images/crop3.jpg') }}"  class="top-imgs">
+				   		 	</div>
+				   		</div>
+					 </article>
+				 </div>
+				
+            </div>
+            <script src="js/jquery.wmuSlider.js"></script> 
+			  <script>
+       			$('.example1').wmuSlider();         
+   		     </script> 	           	      
+      </div>
+	 </div>     
+    </div>
+    <div class ="row conga">
+        <div class="col-md-6 few-words">
+            <div class="floter">
+                <h1>lurem ipsum</h1>
+                <div class="transe-text">
+                    content content content content content content content content content content content content content content content
+                    content content content content content content content content content content content content content content content
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="logo-cen">
+                <img width="100%" src="{{ asset('images/logo2.png') }}">
+            </div>
+            <div class="tab-o-c">
+                <h1>Contents<h1>
+                <ul>
+                    <li>Content</li>
+                    <li>Content</li>
+                    <li>Content</li>
+                    <li>Content</li>
+                    <li>Content</li>
+                </ul>
+                <img width="100%" src="{{ asset('images/multi-image.jpg') }}">
+            </div>
+        </div>
+    </div><!---->
+    <div class="second-in">
+        <div class="col-md-6 fewer-words">
+            <div class="logo-cen">
+                <img width="100%" src="{{ asset('images/logo2.png') }}">
+            </div>
+            <h1>Bethel Estate</h1>
+            <p>Content</p><br>
+            <h1>content content content content</h1>
+        </div>
+        <div class="col-md-6">
+            <div class="spacer"></div>
+            <div class="bottom-plan">
+                <img width="100%" src="{{ asset('images/site-plan-bare1.png') }}">
+            </div>
+        </div>
+    </div>
+	<div class="content">
+		<div class="services-section" id="services">
+			<div class="container"> 
+			<div class="services-header">
+				<h3><span>[</span> Facilities <span>]</span></h3>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+			</div>
+			<div class="services-sectiongrids">
+				<div class="col-md-4 services-grid">
+					<img src="images/football.jpg" alt="" class="utility-image"/>
+					<h4>Football Field</h4>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<img src="images/tennis.jpg" alt="" class="utility-image"/>
+					<h4>Tennis Court</h4>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<img src="images/sewage.jpg" alt="" class="utility-image"/>
+					<h4>Central Sewage system</h4>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                </div>
+                <div class="col-md-4 services-grid">
+					<img src="images/power.jpg" alt="" class="utility-image"/>
+					<h4>Electricity Supply</h4>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<img src="images/water.jpg" alt="" class="utility-image"/>
+					<h4>Treated Water Supply</h4>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<img src="images/road.jpg" alt="" class="utility-image"/>
+					<h4>Good Roads and Drainage</h4>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+				</div>
+				<div class="clearfix"></div>
+				<!--<div class="arrow1">
+					<a href="#work" class="scroll"><img src="images/arrow1.png" alt=""/></a>
+				</div>-->
+		    </div>
+		</div>
+        </div>
+        <div class="third-in">
+            <h2>Here are some more reasons why you would just love Bethel estate</h2><br>
+            <h1>. Proximity to town and Mile 12 market</h1><br>
+            <h1>. Proximity to gas plant</h1><br>
+            <h1>. Low cost units</h1>
+        </div>
+		<div class="works-section" id="work">
+		   <div class="works-header">
+                <h3><span>[</span> Site Plan <span>]</span></h3>
+                <div class="full-site1">
+                    <img width="100%" src="{{ asset('images/full-site-plan.png') }}">
+                </div>
+                <hr class="divider" />
+				<h3><span>[</span> Floor Plans <span>]</span></h3>
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="full-site">
+                            <img width="100%" class="crv" src="{{ asset('images/terrace.jpg') }}">
+                        </div>
+                        <div class="full-site">
+                            <img width="100%" src="{{ asset('images/ground-floor-plan.png') }}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="full-site">
+                            <img width="100%" src="{{ asset('images/first-floor-1.png') }}">
+                        </div>
+                        <div class="full-site">
+                            <img width="100%" src="{{ asset('images/pent-floor-plan.png') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+	  <div class="arrow">
+				<a href="#about" class="scroll"><img src="images/arrow.png" alt=""/></a>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!--Streetview-->
+    <div class ="row conga bod">
+        <div class="col-md-8 street-view">
+            
+        </div>
+        <div class="col-md-4">
+            <div class="logo-cen">
+                <img width="100%" class="box-shad" src="{{ asset('images/logo2.png') }}">
+            </div>
+            <div class="site-locat-info">
+                <h2>Info</h2>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p> 
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+            </div>
+        </div>
+    </div>
+	<!-- portfolio-section-ends -->
+	<div class="about-section" id="about" id="about">
+	<div class="container">
+		<div class="about-header">
+			<h3><span>[</span> Find Us <span>]</span></h3>
+            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p> 
+            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+        </div>
+			<div class="about-sectiongrids">
+				<div class="col-md-6 about-leftgrid">
+					<div class="enti-map">
+                        <img width="100%" src="{{ asset('images/map.jpg') }}">
+                    </div>
+	</div>
+	<div class="col-md-6 about-rightgrid">
+		<div class="write-up">
+            <h2>Know more about Bethel estate</h2>
+            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p> 
+            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+	</div>
+	<div class="arrow1">
+	<a href="#contact" class="scroll"><img src="images/arrow1.png" alt=""/></a>
+					</div>
+	</div>
+	</div>
+    </div>
+    
+        <!--
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15853.47904470335!2d3.393949737594087!3d6.60088677362213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93205ae52ac3%3A0x214d8378cdcbc9e1!2sMile+12%2C+Lagos!5e0!3m2!1sen!2sng!4v1549821983748" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        -->
+
+	<div class="footer-section" id="contact" id="contact">
+			<div class="container"> 
+			<div class="contact-header">
+				<h3><span>[</span> Purchase <span>]</span></h3>
+					<p>sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+			</div>
+			<div class="social-icon">
+				<a href="#"><i class="icon1"></i></a>
+				<a href="#"><i class="icon2"></i></a>
+				<!--<a href="#"><i class="icon3"></i></a>-->
+				<a href="#"><i class="icon4"></i></a>
+				<!--<a href="#"><i class="icon5"></i></a>
+				<a href="#"><i class="icon6"></i></a>
+				<a href="#"><i class="icon7"></i></a>
+				<a href="#"><i class="icon8"></i></a>-->
+			</div>
+			<div class="contact">
+                <div class="col-md-4 contactgrid">
+				<input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
+                </div>
+				<div class="col-md-4 contactgrid">
+				<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
+				</div>
+				<div class="col-md-4 contactgrid">
+				<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
+				</div>
+				<div class="col-md-8 contactgrid1">
+				<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+				</div>
+				<div class="col-md-4 contactgrid2">
+				<input type="button" value="[send message]">
+			   </div>
+			   <div class="clearfix"></div>
+				</div>
+				<div class="footer-bottom">
+
+					<p> Bethel Estate &copy;20{{ date('y') }}  All rights  Reserved | Brought to you by <strong>OKB and Associates</strong> </p>
+
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+
+		</div>		
+	</div>
+	
+	
+</body>
+</html>
