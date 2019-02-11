@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Mail;
 
 use App\Http\Requests\CreatepersonaldataRequest;
 use App\Http\Requests\UpdatepersonaldataRequest;
@@ -57,6 +58,25 @@ class personaldataController extends AppBaseController
             ->with('personaldatas', $personaldatas)->with('lenn',$lenn)->with('pic',$pic);
     }
 
+    public function search(Request $request){
+        $userid=\Auth::user();
+
+        $lenn=0;
+        $pic=$userid->pic;
+
+        if($pic !=''){
+            $pic='images/'.$pic;
+        }
+
+        $criteria=$request->search;
+
+        $user=User::where('email',$criteria)->orWhere('phone',$criteria)->get()->first();
+
+        $personaldatas = personaldata::where('userid',$user->id)->get();
+        return view('personaldatas.index')
+            ->with('personaldatas', $personaldatas)->with('lenn',$lenn)->with('pic',$pic);
+    }
+
     /**
      * Show the form for creating a new personaldata.
      *
@@ -90,6 +110,19 @@ class personaldataController extends AppBaseController
 
         }
 
+        $email = 'jamitex4life@yahoo.co.uk';
+        $f_name = \Auth::user()->firstname;
+        $l_name = \Auth::user()->surname;
+        $phone = \Auth::user()->phone;
+        $cust_email=\Auth::user()->email;
+       
+        Mail::send('message', ['email' => $email,'f_name' => $f_name, 'l_name' => $l_name,'phone'=>$phone],
+            function($mail) use ($email){
+                $mail->from('nwachukwujames7@gmail.com',"Bethel estate");
+                $mail->to($email, "Mr Yinka");
+                $mail->subject('PURCHASE NOTIFICATION');
+            });
+
         Flash::success('Personaldata saved successfully.');
 
         return redirect(route('personaldatas.index'));
@@ -117,7 +150,7 @@ class personaldataController extends AppBaseController
             return redirect(route('personaldatas.index'));
         }
 
-        return view('personaldatas.show')->with('personaldata', $personaldata)->with('pic',$pic);
+        return view('personaldatas.show')->with('personaldata', $personaldata)->with('pic',$pic)->with('user',$user);
     }
 
     /**

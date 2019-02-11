@@ -1,6 +1,36 @@
 <div class="row">
 
 <div class="col-sm-6">
+
+<!--user details-->
+
+<div class="form-group">
+    {!! Form::label('surname', 'Surname:') !!}
+    <span style="color:blue; font-weight:bold;">{!! $user->surname !!}</span>
+</div>
+
+<div class="form-group">
+    {!! Form::label('firstname', 'Firstname:') !!}
+    <span style="color:blue; font-weight:bold;">{!! $user->firstname !!}</span>
+</div>
+
+<div class="form-group">
+    {!! Form::label('middlename', 'Middlename:') !!}
+    <span style="color:blue; font-weight:bold;">{!! $user->middlename !!}</span>
+</div>
+
+<div class="form-group">
+    {!! Form::label('gender', 'Gender:') !!}
+    <span style="color:blue; font-weight:bold;">{!! $user->gender !!}</span>
+</div>
+
+<div class="form-group">
+    {!! Form::label('dob', 'Date of Birth:') !!}
+    <span style="color:blue; font-weight:bold;">{!! $user->dob !!}</span>
+</div>
+
+<!--end of user details right-->
+
 <!-- Residentialstatus Field -->
 <div class="form-group">
     {!! Form::label('residentialstatus', 'Residentialstatus:') !!}
@@ -38,7 +68,37 @@
 </div>
 
 </div>
+
+
+
+<!--Right part -->
+
+<div class="form-group">
+    {!! Form::label('pob', 'Place of birth:') !!}
+    <span style="color:blue; font-weight:bold;">{!! $user->pob !!}</span>
+</div>
+
+<div class="form-group">
+    {!! Form::label('status', 'Marital status:') !!}
+    <span style="color:blue; font-weight:bold;">{!! $user->status !!}</span>
+</div>
+
 <div class="col-sm-6">
+
+<div class="form-group">
+    {!! Form::label('nationality', 'Nationality:') !!}
+    <span style="color:blue; font-weight:bold;">{!! $user->nationality !!}</span>
+</div>
+
+<div class="form-group">
+    {!! Form::label('address', 'Address:') !!}
+    <span style="color:blue; font-weight:bold;">{!! $user->address !!}</span>
+</div>
+
+<div class="form-group">
+    {!! Form::label('phone', 'Phone:') !!}
+    <span style="color:blue; font-weight:bold;">{!! $user->phone !!}</span>
+</div>
 
 <!-- Monthlysalary Field -->
 <div class="form-group">
