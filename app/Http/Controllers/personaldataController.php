@@ -192,6 +192,16 @@ class personaldataController extends AppBaseController
         }
 
         $personaldata = $this->personaldataRepository->update($request->all(), $id);
+        
+        if ($request->hasFile('pic')) {
+            $file = $request->file('pic');
+
+            $imageName = time().'.'.$file->getClientOriginalExtension();
+            $file->move(public_path('images'), $imageName);
+            User::find(\Auth::user()->id)->update(['pic' => $imageName]);
+
+        }
+
 
         Flash::success('Personaldata updated successfully.');
 
