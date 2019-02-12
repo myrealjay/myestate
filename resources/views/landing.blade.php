@@ -35,6 +35,7 @@
 </head>
 <body>
 <div class="header" id="head">	
+    <div class="carul"></div>
       <div class="container"> 
          <div class="header-top">
       		 <div class="logo">
@@ -204,18 +205,18 @@
 				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="full-site">
+                        <div class="full-site change">
                             <img width="100%" class="crv" src="{{ asset('images/terrace.jpg') }}">
                         </div>
-                        <div class="full-site">
+                        <div class="full-site change">
                             <img width="100%" src="{{ asset('images/ground-floor-plan.png') }}">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="full-site">
+                        <div class="full-site change">
                             <img width="100%" src="{{ asset('images/first-floor-1.png') }}">
                         </div>
-                        <div class="full-site">
+                        <div class="full-site change">
                             <img width="100%" src="{{ asset('images/pent-floor-plan.png') }}">
                         </div>
                     </div>
