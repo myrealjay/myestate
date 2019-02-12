@@ -58,7 +58,7 @@
                 {!! csrf_field() !!}
                 
 				<div class="col-md-4 contactgrid">
-				<input name="email" type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}" value="{{ old('email') }}" required>
+				<input name="email" type="text" class="text" value="email" onfocus="if (this.value == 'email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'email';}" value="{{ old('email') }}" required>
                 @if ($errors->has('email'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('email') }}</strong>
