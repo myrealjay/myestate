@@ -115,13 +115,10 @@
                 <img width="100%" src="{{ asset('images/logo2.png') }}">
             </div>
             <div class="tab-o-c">
-                <h1>Contents<h1>
-                <ul>
-                    <li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
-				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
-				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
-				<li><a href="#contact" class="scroll"><span data-hover="purchase">purchase</span></a></li>
-                </ul>
+            	<center>
+                <h1>Welcome to Bethel estate<br> Home for all <br> Second to none<h1>
+                	</center>
+                	<p>&nbsp;</p>
                 <img width="100%" src="{{ asset('images/multi-image.jpg') }}">
             </div>
         </div>
