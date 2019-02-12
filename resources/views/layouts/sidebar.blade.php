@@ -1,4 +1,4 @@
-<aside class="main-sidebar" id="sidebar-wrapper">
+<aside class="main-sidebar mysidebar" id="sidebar-wrapper" style="">
 
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -7,7 +7,7 @@
         <div class="user-panel">
             <div class="pull-left image">
             @if(Auth::user()->pic)
-                <img src="images/{{Auth::user()->pic}}" class="img-circle"
+                <img src="/images/{{Auth::user()->pic}}" class="img-circle"
                      alt="User Image"/>
             @endif
             </div>

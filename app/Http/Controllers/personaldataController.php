@@ -137,6 +137,10 @@ class personaldataController extends AppBaseController
      */
     public function show($id)
     {
+
+        $userid=\Auth::user();
+
+        $lenn=0;
         $personaldata = $this->personaldataRepository->findWithoutFail($id);
 
         $user=User::where('id',$personaldata->userid)->get()->first();
@@ -150,7 +154,7 @@ class personaldataController extends AppBaseController
             return redirect(route('personaldatas.index'));
         }
 
-        return view('personaldatas.show')->with('personaldata', $personaldata)->with('pic',$pic)->with('user',$user);
+        return view('personaldatas.show')->with('personaldata', $personaldata)->with('pic',$pic)->with('user',$user)->with('lenn',$lenn);
     }
 
     /**
