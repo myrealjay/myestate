@@ -1,4 +1,4 @@
-<table class="table table-responsive" id="personaldatas-table">
+<table class="table table-responsive-md" id="personaldatas-table">
     <thead style="background-color:#5499C7; color:#fff;">
         <tr>
             <th>Residentialstatus</th>

@@ -57,29 +57,45 @@
 
                 {!! csrf_field() !!}
                 
-				<div class="col-md-4 contactgrid">
-				<input name="email" type="text" class="text" value="email" onfocus="if (this.value == 'email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'email';}" value="{{ old('email') }}" required>
-                @if ($errors->has('email'))
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('email') }}</strong>
-                    </span>
-                @endif        
-            </div>
-               
-                <div class="col-md-4 contactgrid">
-                <input name="password" type="password" class="text" placeholder="password" required>
-                @if ($errors->has('password'))
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('password') }}</strong>
-                    </span>
-                @endif    
-                </div>
+				<div class="row">
+				<div class="col-md-4"></div>
+				
+				<div class="col-md-4">
 
-				<div class="col-md-4 contactgrid2">
-				<input type="submit" value="Sign in" class="mybutton btn btn-primary" style="width:120px;">
+					<div class="row">
+						<div class="col-md-12 contactgrid">
+							<input name="email" type="text" class="text" value="email" onfocus="if (this.value == 'email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'email';}" value="{{ old('email') }}" required>
+							@if ($errors->has('email'))
+								<span class="invalid-feedback" role="alert">
+									<strong>{{ $errors->first('email') }}</strong>
+								</span>
+							@endif        
+						</div>
+					</div>
+				
+               <div class="row">
+					<div class="col-md-12 contactgrid">
+						<input name="password" type="password" class="text" placeholder="password" required>
+						@if ($errors->has('password'))
+							<span class="invalid-feedback" role="alert">
+								<strong>{{ $errors->first('password') }}</strong>
+							</span>
+						@endif    
+					</div>
 			   </div>
-			   <div class="clearfix"></div>
-                </div>
+                
+				<div class="row">
+					<div class="col-md-12 contactgrid">
+						<input type="submit" value="Sign in" class="mybutton btn btn-primary" style="width:120px;">
+					</div>
+					<div class="clearfix"></div>
+					</div>
+
+					</div>
+				</div>
+				
+				
+			</div>
         </form>
 				<div class="footer-bottom">
 

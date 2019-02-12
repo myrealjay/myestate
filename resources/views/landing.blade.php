@@ -34,12 +34,127 @@
 
 </head>
 <body>
-	<div class="header" id="head">	
-		<div class="container"> 
-			<div class="header-top">
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt=""/></a>
-					<!--<h2>Bethel</h2>-->
+<div class="header" id="head">	
+    <div class="carul"></div>
+      <div class="container"> 
+         <div class="header-top">
+      		 <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                <!--<h2>Bethel</h2>-->
+			 </div>
+		   <div class="top-menu">
+		   	<span class="menu"> </span>
+			<ul>
+			 	<nav class="cl-effect-5">
+				<li><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
+				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
+				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
+				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
+				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
+				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
+				</nav>
+			 </ul>
+			 </div>
+			 <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+            $(".top-menu ul").slideToggle("slow" , function(){
+            });
+		 });
+		 </script>
+			<div class="clearfix"></div>
+		 </div>  
+		  <div class="index-banner">
+       	   <div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	    <div class="banner-wrap">
+				   	       	<div class="banner_center">
+				   		 		<h1>Welcome to Bethel estate</h1> 
+                                <img src="{{ asset('images/crop.jpg') }}"  class="top-imgs">
+				   		 	</div>
+				   		</div>
+					</article>
+				   <article style="position: relative; width: 100%; opacity: 1;"> 
+				   	   	<div class="banner-wrap">
+				   	      <div class="banner_center">
+				   		 		<h1>Take a tour of our estate</h1> 
+				   		 		<img src="{{ asset('images/crop2.jpg') }}"  class="top-imgs">
+				   		 	</div>
+				   		</div>
+				   </article>
+				   <article style="position: absolute; width: 100%; opacity: 0;">
+				   	  	<div class="banner-wrap">
+				   	       <div class="banner_center">
+				   		 		<h1>A rare opportunity</h1> 
+				   		 		<img src="{{ asset('images/crop3.jpg') }}"  class="top-imgs">
+				   		 	</div>
+				   		</div>
+					 </article>
+				 </div>
+				
+            </div>
+            <script src="js/jquery.wmuSlider.js"></script> 
+			  <script>
+       			$('.example1').wmuSlider();         
+   		     </script> 	           	      
+      </div>
+	 </div>     
+    </div>
+    <div class ="row conga">
+        <div class="col-md-6 few-words">
+            <div class="floter">
+                <h1>Surrounded with serene environment for family living</h1>
+                <div class="transe-text">
+                    Welcome to Bethel Estate, an exceptional new development on the fringes of the picturesque Ikorodu Town of Lagos. Here, you can choose from a carefully-designed collection of three or four bedroom homes, with a BQ. Combined with an outstanding location, these attractive new homes offer you and your family the opportunity to step straight into a country lifestyle.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="logo-cen">
+                <img width="100%" src="{{ asset('images/logo2.png') }}">
+            </div>
+            <div class="tab-o-c">
+                <h1>Contents<h1>
+                <ul>
+                    <li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
+				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
+				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
+				<li><a href="#contact" class="scroll"><span data-hover="purchase">purchase</span></a></li>
+                </ul>
+                <img width="100%" src="{{ asset('images/multi-image.jpg') }}">
+            </div>
+        </div>
+    </div><!---->
+    <div class="second-in">
+        <div class="col-md-6 fewer-words">
+            <div class="logo-cen">
+                <img width="100%" src="{{ asset('images/logo2.png') }}">
+            </div>
+            <h1>Bethel Estate</h1>
+            <!--<p>Content</p><br>-->
+            <h1>Surrounded with serene environment for family living</h1>
+        </div>
+        <div class="col-md-6">
+            <div class="spacer"></div>
+            <div class="bottom-plan">
+                <img width="100%" src="{{ asset('images/site-plan-bare1.png') }}">
+            </div>
+        </div>
+    </div>
+	<div class="content">
+		<div class="services-section" id="services">
+			<div class="container"> 
+			<div class="services-header">
+				<h3><span>[</span> Facilities <span>]</span></h3>
+					<p>If you’ve dreamed of exchanging traffic and busy streets for a good township idyll, Bethel Estate is just what you've been waiting for.<br>
+					Owode Onirin, Owode Elede <b>(and others as listed by google map)</b>, just minutes' away, marries charm and convenience, providing a diverse range of shops and mini mall selling everything from everyday essentials to the ‘little luxuries’ that bring pleasure to your day.  </p>
+			</div>
+			<div class="services-sectiongrids">
+				<div class="col-md-4 services-grid">
+					<img src="images/football.jpg" alt="" class="utility-image"/>
+					<h4>Football Field</h4>
+					<p>Quickly relieve the day to day stress with a serene burnout field that is easily accessible.</p>
 				</div>
 				<div class="top-menu">
 					<span class="menu"> </span>
@@ -183,38 +298,43 @@
 				</div>-->
 			</div>
 		</div>
-	</div>
-	<div class="third-in">
-		<h2>Here are some more reasons why you would just love Bethel estate</h2><br>
-		<h1>. Proximity to town and Mile 12 market</h1><br>
-		<h1>. Proximity to gas plant</h1><br>
-		<h1>. Low cost units</h1>
-	</div>
-	<div class="works-section" id="work">
-		<div class="works-header">
-			<h3><span>[</span> Site Plan <span>]</span></h3>
-			<div class="full-site1">
-				<img width="100%" src="{{ asset('images/full-site-plan.png') }}">
-			</div>
-			<hr class="divider" />
-			<h3><span>[</span> Floor Plans <span>]</span></h3>
-			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="full-site">
-						<img width="100%" class="crv" src="{{ asset('images/terrace.jpg') }}">
-					</div>
-					<div class="full-site">
-						<img width="100%" src="{{ asset('images/ground-floor-plan.png') }}">
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="full-site">
-						<img width="100%" src="{{ asset('images/first-floor-1.png') }}">
-					</div>
-					<div class="full-site">
-						<img width="100%" src="{{ asset('images/pent-floor-plan.png') }}">
-					</div>
+        </div>
+        <div class="third-in">
+            <h2>Here are some more reasons why you would just love Bethel estate</h2><br>
+            <h1>. Proximity to town and Mile 12 market</h1><br>
+            <h1>. Proximity to gas plant</h1><br>
+            <h1>. Low cost units</h1>
+        </div>
+		<div class="works-section" id="work">
+		   <div class="works-header">
+                <h3><span>[</span> Site Plan <span>]</span></h3>
+                <div class="full-site1">
+                    <img width="100%" src="{{ asset('images/full-site-plan.png') }}">
+                </div>
+                <hr class="divider" />
+				<h3><span>[</span> Floor Plans <span>]</span></h3>
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="full-site change">
+                            <img width="100%" class="crv" src="{{ asset('images/terrace.jpg') }}">
+                        </div>
+                        <div class="full-site change">
+                            <img width="100%" src="{{ asset('images/ground-floor-plan.png') }}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="full-site change">
+                            <img width="100%" src="{{ asset('images/first-floor-1.png') }}">
+                        </div>
+                        <div class="full-site change">
+                            <img width="100%" src="{{ asset('images/pent-floor-plan.png') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+	  <div class="arrow">
+				<a href="#about" class="scroll"><img src="images/arrow.png" alt=""/></a>
 				</div>
 			</div>
 		</div>

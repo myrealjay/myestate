@@ -73,6 +73,7 @@ body{
 }
 .logo{
 	float:left;
+	position:relative;
 	
 }
 .top-menu{
@@ -166,11 +167,8 @@ nav a:focus {
 	top: 40%;
 	left: 25%;
 	text-align: center;
-	transition:0.5s
 }
-.banner_center:hover {
-	transform: scale(1.2);
-}
+
 .banner_center h1 {
 	color: #eee;
 	font-family: 'Arvo', serif;
@@ -1678,6 +1676,21 @@ color: #d5d6d7;
 		margin:auto;
 		border-radius: 10px;
 		box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.4);
+		animation:anim2 7s infinite;
+	}
+	.top-imgs:hover {
+		animation:anim1 0.5s 1;
+	}
+	@keyframes anim1{
+		0%{transform: scale(1);}
+		40%{transform: scale(0.8);}
+		100%{transform: scale(1);}
+	}
+	@keyframes anim2{
+		0%{transform: scale(1);}
+		5%{transform: scale(1.2);}
+		10%{transform: scale(1);}
+		100%{transform: scale(1);}
 	}
 	.im-div{
 		width:60vw;
@@ -1788,6 +1801,7 @@ color: #d5d6d7;
 	.street-view{
 		min-height: 100vh;
 		background: url("../images/street-map.jpg") no-repeat;
+		background-position: center;
 		background-size: cover;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -1825,3 +1839,23 @@ color: #d5d6d7;
 	.centered{
 		text-align: center;
 	}
+<<<<<<< HEAD
+	.change:hover {
+		transform: rotate(360deg);
+		transition:0.5s
+	}
+	.carul {
+		position:absolute;
+		width:100%;
+		height:100%;
+		background-color: #22B4B822;
+		z-index: 0;
+	}
+	.carul:hover{
+		z-index: 0;
+	}
+=======
+
+	
+	
+>>>>>>> 601d6356da6f1b7ae58dda989c1896f152c89cdf
