@@ -1839,6 +1839,7 @@ color: #d5d6d7;
 	.centered{
 		text-align: center;
 	}
+<<<<<<< HEAD
 	.change:hover {
 		transform: rotate(360deg);
 		transition:0.5s
@@ -1853,3 +1854,8 @@ color: #d5d6d7;
 	.carul:hover{
 		z-index: 0;
 	}
+=======
+
+	
+	
+>>>>>>> 601d6356da6f1b7ae58dda989c1896f152c89cdf

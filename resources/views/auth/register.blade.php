@@ -32,9 +32,9 @@
 		   	<span class="menu"> </span>
 			<ul>
 			 	<nav class="cl-effect-5">
-				<li><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
+				<li><a href="/" class="scroll"><span data-hover="Home">home</span></a></li>
                 <li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
-				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
+				<li><a class="active"  href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
 				</nav>
 			 </ul>
 			 </div>
@@ -56,17 +56,14 @@
 				<a href="#"><i class="icon2"></i></a>
 				<!--<a href="#"><i class="icon3"></i></a>-->
 				<a href="#"><i class="icon4"></i></a>
-				<!--<a href="#"><i class="icon5"></i></a>
-				<a href="#"><i class="icon6"></i></a>
-				<a href="#"><i class="icon7"></i></a>
-				<a href="#"><i class="icon8"></i></a>-->
+				
 			</div>
 			<div class="contact">
             <form method="post" action="{{ url('/register') }}">
 
                 {!! csrf_field() !!}
                 <div class="col-md-4 contactgrid">
-				<input name="title" type="text" class="text" value=" title" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' title';} " value="{{ old('title') }}" required>
+				<input name="title" type="text" class="text" value=" title" onfocus="if (this.value == ' title') {this.value = '';}" onblur="if (this.value == '') {this.value = ' title';} " value="{{ old('title') }}" required>
                 @if ($errors->has('title'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('title') }}</strong>
@@ -74,7 +71,7 @@
                 @endif    
             </div>
                 <div class="col-md-4 contactgrid">
-				<input name="surname" type="text" class="text" value=" surname" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' surname';} " value="{{ old('surname') }}" required>
+				<input name="surname" type="text" class="text" value=" surname" onfocus="if (this.value == ' surname') {this.value = '';}" onblur="if (this.value == '') {this.value = ' surname';} " value="{{ old('surname') }}" required>
                 @if ($errors->has('surname'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('surname') }}</strong>
@@ -82,7 +79,7 @@
                 @endif        
             </div>
                 <div class="col-md-4 contactgrid">
-				<input name="firstname" type="text" class="text" value=" firstname" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' firstname';} " value="{{ old('firstname') }}" required>
+				<input name="firstname" type="text" class="text" value=" firstname" onfocus="if (this.value == ' firstname') {this.value = '';}" onblur="if (this.value == '') {this.value = ' firstname';} " value="{{ old('firstname') }}" required>
                 @if ($errors->has('firstname'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('firstname') }}</strong>
@@ -90,7 +87,7 @@
                 @endif        
             </div>
                 <div class="col-md-4 contactgrid">
-				<input name="middlename" type="text" class="text" value=" middlename" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' middlename';} " value="{{ old('middlename') }}" required>
+				<input name="middlename" type="text" class="text" value=" middlename" onfocus="if (this.value == ' middlename') {this.value = '';}" onblur="if (this.value == '') {this.value = ' middlename';} " value="{{ old('middlename') }}" required>
                 @if ($errors->has('middlename'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('middlename') }}</strong>
@@ -99,7 +96,7 @@
             </div>
                 
                 <div class="col-md-4 contactgrid">
-				<input name="dob" type="text" class="text" value=" dob" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' dob';} " value="{{ old('dob') }}" required>
+				<input name="dob" type="text" class="text" value=" Date of birth" onfocus="if (this.value == ' Date of birth') {this.value = '';}" onblur="if (this.value == '') {this.value = ' Date of birth';} " value="{{ old('dob') }}" required>
                 @if ($errors->has('dob'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('dob') }}</strong>
@@ -107,7 +104,7 @@
                 @endif        
             </div>
                 <div class="col-md-4 contactgrid">
-				<input name="pob" type="text" class="text" value=" pob" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' pob';} " value="{{ old('pob') }}" required>
+				<input name="pob" type="text" class="text" value=" Place of birth" onfocus="if (this.value == ' Place of birth') {this.value = '';}" onblur="if (this.value == '') {this.value = ' Place of birth';} " value="{{ old('pob') }}" required>
                 @if ($errors->has('pob'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('pob') }}</strong>
@@ -116,7 +113,7 @@
             </div>
                 
                 <div class="col-md-4 contactgrid">
-				<input name="address" type="text" class="text" value=" address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' address';} " value="{{ old('address') }}" required>
+				<input name="address" type="text" class="text" value=" address" onfocus="if (this.value == ' address') {this.value = '';}" onblur="if (this.value == '') {this.value = ' address';} " value="{{ old('address') }}" required>
                 @if ($errors->has('address'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('address') }}</strong>
@@ -124,7 +121,7 @@
                 @endif        
             </div>
                 <div class="col-md-4 contactgrid">
-				<input name="phone" type="text" class="text" value=" phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' phone';} " value="{{ old('phone') }}" required>
+				<input name="phone" type="text" class="text" value=" phone" onfocus="if (this.value == ' phone') {this.value = '';}" onblur="if (this.value == '') {this.value = ' phone';} " value="{{ old('phone') }}" required>
                 @if ($errors->has('phone'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('phone') }}</strong>
@@ -132,7 +129,7 @@
                 @endif        
             </div>
 				<div class="col-md-4 contactgrid">
-				<input name="email" type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}" value="{{ old('email') }}" required>
+				<input name="email" type="text" class="text" value=" email" onfocus="if (this.value == ' email') {this.value = '';}" onblur="if (this.value == '') {this.value = ' email';}" value="{{ old('email') }}" required>
                 @if ($errors->has('email'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('email') }}</strong>
@@ -140,7 +137,7 @@
                 @endif        
             </div>
                 <div class="col-md-4 contactgrid">
-                <select name="gender" class="text" value=" gender" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' gender';} " value="{{ old('gender') }}" >
+                <select name="gender" class="text" value=" gender" onfocus="if (this.value == ' gender') {this.value = '';}" onblur="if (this.value == '') {this.value = ' gender';} " value="{{ old('gender') }}" >
                     <option>Male</option>
                     <option>Female</option>
                 </select>

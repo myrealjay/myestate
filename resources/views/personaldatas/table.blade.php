@@ -1,5 +1,5 @@
-<table class="table table-responsive" id="personaldatas-table">
-    <thead>
+<table class="table table-responsive-md" id="personaldatas-table">
+    <thead style="background-color:#5499C7; color:#fff;">
         <tr>
             <th>Residentialstatus</th>
         <th>Emptype</th>
@@ -14,7 +14,7 @@
             <th colspan="3">Action</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody style="background-color:#E2E9ED;">
     @foreach($personaldatas as $personaldata)
         <tr>
             <td>{!! $personaldata->residentialstatus !!}</td>

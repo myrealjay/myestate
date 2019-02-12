@@ -110,7 +110,7 @@ class personaldataController extends AppBaseController
 
         }
 
-        $email = 'jamitex4life@yahoo.co.uk';
+        /*$email = 'olayinka.binuyo@okbcoy.com.ng';
         $f_name = \Auth::user()->firstname;
         $l_name = \Auth::user()->surname;
         $phone = \Auth::user()->phone;
@@ -121,7 +121,7 @@ class personaldataController extends AppBaseController
                 $mail->from('nwachukwujames7@gmail.com',"Bethel estate");
                 $mail->to($email, "Mr Yinka");
                 $mail->subject('PURCHASE NOTIFICATION');
-            });
+            });*/
 
         Flash::success('Personaldata saved successfully.');
 
@@ -137,6 +137,10 @@ class personaldataController extends AppBaseController
      */
     public function show($id)
     {
+
+        $userid=\Auth::user();
+
+        $lenn=0;
         $personaldata = $this->personaldataRepository->findWithoutFail($id);
 
         $user=User::where('id',$personaldata->userid)->get()->first();
@@ -150,7 +154,7 @@ class personaldataController extends AppBaseController
             return redirect(route('personaldatas.index'));
         }
 
-        return view('personaldatas.show')->with('personaldata', $personaldata)->with('pic',$pic)->with('user',$user);
+        return view('personaldatas.show')->with('personaldata', $personaldata)->with('pic',$pic)->with('user',$user)->with('lenn',$lenn);
     }
 
     /**

@@ -25,23 +25,43 @@
 
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link href="{{url('css/style2.css')}}" rel="stylesheet" type="text/css" media="all" />	
 
     @yield('css')
+
+    <script>
+    function Clickheretoprint()
+    { 
+    var disp_setting="toolbar=yes,location=no,directories=yes,menubar=yes,"; 
+        disp_setting+="scrollbars=yes,width=400, height=400, left=100, top=25"; 
+    var content_vlue = document.getElementById("print_content").innerHTML; 
+    
+    var docprint=window.open("","",disp_setting); 
+    docprint.document.open(); 
+    docprint.document.write('<html><head><title>Inel Power System</title>'); 
+    docprint.document.write('</head><body onLoad="self.print()" style="width: 400px; font-size:12px; font-family:arial;">');          
+    docprint.document.write(content_vlue);          
+    docprint.document.write('</body></html>'); 
+    docprint.document.close(); 
+    docprint.focus(); 
+    }
+</script>
 </head>
 
 <body class="skin-blue sidebar-mini">
 @if (!Auth::guest())
     <div class="wrapper">
         <!-- Main Header -->
-        <header class="main-header" style="background-color:#6A6C6E !important;">
+        <header class="main-header mysidebar" style="background-color:#6A6C6E !important;">
 
             <!-- Logo -->
-            <a href="#" class="logo" style="background-color:#363637 !important;">
+            <a href="#" class="logo mysidebar" style="background-color:#363637 !important;">
                 <b>Bethel Estate</b>
             </a>
 
             <!-- Header Navbar -->
-            <nav class="navbar navbar-static-top" role="navigation" style="background-color:#444546 !important;">
+            <nav class="navbar navbar-static-top mysidebar" role="navigation" style="background-color:#444546 !important;">
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">Toggle navigation</span>
@@ -54,7 +74,7 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="images/{{Auth::user()->pic}}"
+                                <img src="/images/{{Auth::user()->pic}}"
                                      class="user-image" alt="User Image"/>
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{!! Auth::user()->firstname !!}</span>
@@ -63,7 +83,7 @@
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
                                 @if(Auth::user()->pic)
-                                    <img src="images/{{Auth::user()->pic}}"
+                                    <img src="/images/{{Auth::user()->pic}}"
                                          class="img-circle" alt="User Image"/>
                                 @endif
                                     <p>

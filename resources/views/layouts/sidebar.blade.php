@@ -1,4 +1,4 @@
-<aside class="main-sidebar" id="sidebar-wrapper">
+<aside class="main-sidebar mysidebar" id="sidebar-wrapper" style="">
 
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -7,7 +7,7 @@
         <div class="user-panel">
             <div class="pull-left image">
             @if(Auth::user()->pic)
-                <img src="images/{{Auth::user()->pic}}" class="img-circle"
+                <img src="/images/{{Auth::user()->pic}}" class="img-circle"
                      alt="User Image"/>
             @endif
             </div>
@@ -23,15 +23,16 @@
         </div>
 
         <!-- search form (Optional) -->
-        <form action="#" method="get" class="sidebar-form">
+        <!--<form action="search" method="post" class="sidebar-form">
+        {!! csrf_field() !!}
             <div class="input-group">
-                <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                <input type="text" name="search" class="form-control" placeholder="phone or email"/>
           <span class="input-group-btn">
             <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i>
             </button>
           </span>
             </div>
-        </form>
+        </form>-->
         <!-- Sidebar Menu -->
 
         <ul class="sidebar-menu" data-widget="tree">

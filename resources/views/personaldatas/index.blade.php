@@ -32,7 +32,7 @@
             
 
 
-            <div class="box-body">
+            <div class="box-body table-responsive">
             
                     @include('personaldatas.table')
             </div>

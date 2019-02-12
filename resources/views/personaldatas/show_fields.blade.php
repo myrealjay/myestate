@@ -126,15 +126,10 @@
 
 <!-- Created At Field -->
 <div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
+    {!! Form::label('created_at', 'Date:') !!}
     <span style="color:#7B8185; font-weight:bold;">{!! $personaldata->created_at !!}</span>
 </div>
 
-<!-- Updated At Field -->
-<div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
-    <span style="color:#7B8185; font-weight:bold;">{!! $personaldata->updated_at !!}</span>
-</div>
 
 </div>
 </div>
