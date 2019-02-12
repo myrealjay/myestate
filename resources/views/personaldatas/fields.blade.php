@@ -1,6 +1,6 @@
 <!-- Residentialstatus Field -->
 <div class="form-group col-sm-6">
-<label for="residentialstatus" class="col-md-4 col-form-label text-md-right">{{ __('Residentialstatus') }}</label>
+<label for="residentialstatus" class="col-md-4 col-form-label text-md-right">{{ __('Residential status') }}</label>
 
 <select name="residentialstatus" id="residentialstatus" type="text" class="form-control{{ $errors->has('residentialstatus') ? ' is-invalid' : '' }}"  value="{{ old('residentialstatus') }}">
     <option>House Owner</option>
@@ -16,7 +16,7 @@
 
 <!-- Emptype Field -->
 <div class="form-group col-sm-6">
-        <label for="emptype" class="col-md-4 col-form-label text-md-right">{{ __('Emptype') }}</label>
+        <label for="emptype" class="col-md-4 col-form-label text-md-right">{{ __('Employment type') }}</label>
 
             <select name="emptype" id="emptype" type="text" class="form-control{{ $errors->has('emptype') ? ' is-invalid' : '' }}"  value="{{ old('emptype') }}">
                 <option>Paid Employment</option>
@@ -32,7 +32,7 @@
 
 <!-- Workstatus Field -->
 <div class="form-group col-sm-6">
-<label for="workstatus" class="col-md-4 col-form-label text-md-right">{{ __('Workstatus') }}</label>
+<label for="workstatus" class="col-md-4 col-form-label text-md-right">{{ __('Work status') }}</label>
 
 <select name="workstatus" id="workstatus" type="text" class="form-control{{ $errors->has('workstatus') ? ' is-invalid' : '' }}"  value="{{ old('workstatus') }}">
     <option>Full-time</option>
@@ -61,19 +61,19 @@
 
 <!-- Dateemployed Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('dateemployed', 'Dateemployed:') !!}
+    {!! Form::label('dateemployed', 'Date employed:') !!}
     {!! Form::text('dateemployed', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Monthlysalary Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('monthlysalary', 'Monthlysalary:') !!}
+    {!! Form::label('monthlysalary', 'Monthly salary:') !!}
     {!! Form::text('monthlysalary', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Annualsalary Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('annualsalary', 'Annualsalary:') !!}
+    {!! Form::label('annualsalary', 'Annual salary:') !!}
     {!! Form::text('annualsalary', null, ['class' => 'form-control']) !!}
 </div>
 

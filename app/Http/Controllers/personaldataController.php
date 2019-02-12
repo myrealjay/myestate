@@ -110,7 +110,7 @@ class personaldataController extends AppBaseController
 
         }
 
-        $email = 'olayinka.binuyo@okbcoy.com.ng';
+        /*$email = 'olayinka.binuyo@okbcoy.com.ng';
         $f_name = \Auth::user()->firstname;
         $l_name = \Auth::user()->surname;
         $phone = \Auth::user()->phone;
@@ -121,7 +121,7 @@ class personaldataController extends AppBaseController
                 $mail->from('nwachukwujames7@gmail.com',"Bethel estate");
                 $mail->to($email, "Mr Yinka");
                 $mail->subject('PURCHASE NOTIFICATION');
-            });
+            });*/
 
         Flash::success('Personaldata saved successfully.');
 
