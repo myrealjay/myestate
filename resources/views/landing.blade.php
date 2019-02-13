@@ -122,7 +122,7 @@
 				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
 				<li><a href="#contact" class="scroll"><span data-hover="purchase">purchase</span></a></li>
                 </ul>
-                <img width="100%" src="{{ asset('images/multi-image.jpg') }}">
+                <img width="100%" class="smalli" src="{{ asset('images/multi-image.jpg') }} ">
             </div>
         </div>
     </div><!---->
@@ -138,7 +138,7 @@
         <div class="col-md-6">
             <div class="spacer"></div>
             <div class="bottom-plan">
-                <img width="100%" src="{{ asset('images/site-plan-bare1.png') }}">
+                <img width="100%" class="bigi" src="{{ asset('images/site-plan-bare1.png') }}">
             </div>
         </div>
     </div>
@@ -152,32 +152,32 @@
 			</div>
 			<div class="services-sectiongrids">
 				<div class="col-md-4 services-grid">
-					<img src="images/football.jpg" alt="" class="utility-image"/>
+					<img src="images/football.jpg" alt="" class="utility-image smalli"/>
 					<h4>Football Field</h4>
 					<p>Quickly relieve the day to day stress with a serene burnout field that is easily accessible.</p>
 				</div>
 				<div class="col-md-4 services-grid">
-					<img src="images/tennis.jpg" alt="" class="utility-image"/>
+					<img src="images/tennis.jpg" alt="" class="utility-image smalli"/>
 					<h4>Tennis Court</h4>
 					<p>A life time sport for the children, teenager, aged, men, women in short, this tennis is a game for all.</p>
 				</div>
 				<div class="col-md-4 services-grid">
-					<img src="images/sewage.jpg" alt="" class="utility-image"/>
+					<img src="images/sewage.jpg" alt="" class="utility-image smalli"/>
 					<h4>Central Sewage system</h4>
 					<p>Our central sewage system serves as a preservation to the natural environment and protect public health.</p>
                 </div>
                 <div class="col-md-4 services-grid">
-					<img src="images/power.jpg" alt="" class="utility-image"/>
+					<img src="images/power.jpg" alt="" class="utility-image smalli"/>
 					<h4>Electricity Supply</h4>
 					<p>Our electricity supply is constant and always available 24/7, its 100% available and reliable.</p>
 				</div>
 				<div class="col-md-4 services-grid">
-					<img src="images/water.jpg" alt="" class="utility-image"/>
+					<img src="images/water.jpg" alt="" class="utility-image smalli"/>
 					<h4>Treated Water Supply</h4>
 					<p>Our water tratement plant remains second to none, we can guarantee you the purest as your healt is our priority.</p>
 				</div>
 				<div class="col-md-4 services-grid">
-					<img src="images/road.jpg" alt="" class="utility-image"/>
+					<img src="images/road.jpg" alt="" class="utility-image smalli"/>
 					<h4>Good Roads and Drainage</h4>
 					<p>The drainage system ensure there is no water lodging during rainy season while good roads add to the proximity of your moverment.</p>
 				</div>

@@ -1839,7 +1839,6 @@ color: #d5d6d7;
 	.centered{
 		text-align: center;
 	}
-<<<<<<< HEAD
 	.change:hover {
 		transform: rotate(360deg);
 		transition:0.5s
@@ -1854,8 +1853,21 @@ color: #d5d6d7;
 	.carul:hover{
 		z-index: 0;
 	}
-=======
-
-	
-	
->>>>>>> 601d6356da6f1b7ae58dda989c1896f152c89cdf
+	.smalli:hover {
+		animation: nunu 0.7s 1;
+		transition:0.5s
+	}
+	@keyframes nunu {
+		0%{transform: scale(1);}
+		50%{transform: scale(0.8);}
+		100%{transform: scale(1);}
+	}
+	.bigi:hover {
+		animation: nana 0.7s 1;
+		transition:0.5s
+	}
+	@keyframes nana {
+		0%{transform: scale(1);}
+		50%{transform: scale(1.2);}
+		100%{transform: scale(1);}
+	}
