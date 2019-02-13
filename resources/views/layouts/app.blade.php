@@ -39,8 +39,9 @@
     
     var docprint=window.open("","",disp_setting); 
     docprint.document.open(); 
-    docprint.document.write('<html><head><title>Inel Power System</title>'); 
-    docprint.document.write('</head><body onLoad="self.print()" style="width: 400px; font-size:12px; font-family:arial;">');          
+    docprint.document.write('<html><head><title>Bethel Estate</title>'); 
+    docprint.document.write('</head><body onLoad="self.print()" style="width: 400px; font-size:12px; font-family:arial;">'); 
+    docprint.document.write('<h4 style="color:red; text-align:center;">FORM FOR HOUSE PURCHASE AT BETHEL ESTATE</h4>');          
     docprint.document.write(content_vlue);          
     docprint.document.write('</body></html>'); 
     docprint.document.close(); 

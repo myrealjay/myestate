@@ -74,7 +74,7 @@
 				   	    <div class="banner-wrap">
 				   	       	<div class="banner_center">
 				   		 		<h1>Welcome to Bethel estate</h1> 
-                                <img src="{{ asset('images/crop.jpg') }}" class="top-imgs">
+                                <img src="{{ asset('images/crop.jpg') }}" width="100%"  class="top-imgs">
 				   		 	</div>
 				   		</div>
 					</article>
@@ -118,9 +118,7 @@
                 <img width="100%" src="{{ asset('images/logo2.png') }}">
             </div>
             <div class="tab-o-c">
-            	<center>
                 <h1>Welcome to Bethel estate<br> Home for all <br> Second to none<h1>
-                	</center>
                 	<p>&nbsp;</p>
                 <img width="100%" src="{{ asset('images/multi-image.jpg') }}">
             </div>
@@ -138,7 +136,7 @@
         <div class="col-md-6">
             <div class="spacer"></div>
             <div class="bottom-plan">
-                <img width="100%" src="{{ asset('images/site-plan-bare1.png') }}">
+                <img width="100%" class="bigi" src="{{ asset('images/site-plan-bare1.png') }}">
             </div>
         </div>
     </div>
@@ -152,88 +150,34 @@
 			</div>
 			<div class="services-sectiongrids">
 				<div class="col-md-4 services-grid">
-					<img src="images/football.jpg" alt="" class="utility-image"/>
+					<img src="images/football.jpg" alt="" class="utility-image smalli"/>
 					<h4>Football Field</h4>
 					<p>Quickly relieve the day to day stress with a serene burnout field that is easily accessible.</p>
 				</div>
-				<div class="top-menu">
-					<span class="menu"> </span>
-					<ul>
-						<nav class="cl-effect-5">
-							<li><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
-							<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
-							<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
-							<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
-							<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
-							<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
-						</nav>
-					</ul>
+				<div class="col-md-4 services-grid">
+					<img src="images/tennis.jpg" alt="" class="utility-image smalli"/>
+					<h4>Tennis Court</h4>
+					<p>A life time sport for the children, teenager, aged, men, women in short, this tennis is a game for all.</p>
 				</div>
-				<!--script-nav-->
-				<script>
-					$("span.menu").click(function(){
-						$(".top-menu ul").slideToggle("slow" , function(){
-						});
-					});
-				</script>
-				<div class="clearfix"></div>
-			</div>  
-			<div class="index-banner">
-				<div class="wmuSlider example1">
-					<div class="wmuSliderWrapper">
-						<article style="position: absolute; width: 100%; opacity: 0;"> 
-							<div class="banner-wrap">
-								<div class="banner_center">
-									<h1>Welcome to Bethel estate</h1> 
-									<img src="{{ asset('images/crop.jpg') }}"  class="top-imgs">
-								</div>
-							</div>
-						</article>
-						<article style="position: relative; width: 100%; opacity: 1;"> 
-							<div class="banner-wrap">
-								<div class="banner_center">
-									<h1>Take a tour of our estate</h1> 
-									<img src="{{ asset('images/crop2.jpg') }}"  class="top-imgs">
-								</div>
-							</div>
-						</article>
-						<article style="position: absolute; width: 100%; opacity: 0;">
-							<div class="banner-wrap">
-								<div class="banner_center">
-									<h1>A rare opportunity</h1> 
-									<img src="{{ asset('images/crop3.jpg') }}"  class="top-imgs">
-								</div>
-							</div>
-						</article>
-					</div>
-
+				<div class="col-md-4 services-grid">
+					<img src="images/sewage.jpg" alt="" class="utility-image smalli"/>
+					<h4>Central Sewage system</h4>
+					<p>Our central sewage system serves as a preservation to the natural environment and protect public health.</p>
+                </div>
+                <div class="col-md-4 services-grid">
+					<img src="images/power.jpg" alt="" class="utility-image smalli"/>
+					<h4>Electricity Supply</h4>
+					<p>Our electricity supply is constant and always available 24/7, its 100% available and reliable.</p>
 				</div>
-				<script src="js/jquery.wmuSlider.js"></script> 
-				<script>
-					$('.example1').wmuSlider();         
-				</script> 	           	      
-			</div>
-		</div>     
-	</div>
-	<div class ="row conga">
-		<div class="col-md-6 few-words">
-			<div class="floter">
-				<h1>Surrounded with serene environment for family living</h1>
-				<div class="transe-text">
-					Welcome to Bethel Estate, an exceptional new development on the fringes of the picturesque Ikorodu Town of Lagos. Here, you can choose from a carefully-designed collection of three or four bedroom homes, with a BQ. Combined with an outstanding location, these attractive new homes offer you and your family the opportunity to step straight into a country lifestyle.
+				<div class="col-md-4 services-grid">
+					<img src="images/water.jpg" alt="" class="utility-image smalli"/>
+					<h4>Treated Water Supply</h4>
+					<p>Our water tratement plant remains second to none, we can guarantee you the purest as your healt is our priority.</p>
 				</div>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div class="logo-cen">
-				<img width="100%" src="{{ asset('images/logo2.png') }}">
-			</div>
-			<div class="tab-o-c">
-				<center>
-					<h1>Welcome to Bethel Estate <br> a home for all <br> a second to none<h1>
-					</center>
-					<p>&nbsp;</p>
-					<img width="100%" src="{{ asset('images/multi-image.jpg') }}">
+				<div class="col-md-4 services-grid">
+					<img src="images/road.jpg" alt="" class="utility-image smalli"/>
+					<h4>Good Roads and Drainage</h4>
+					<p>The drainage system ensure there is no water lodging during rainy season while good roads add to the proximity of your moverment.</p>
 				</div>
 			</div>
 		</div><!---->

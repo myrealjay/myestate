@@ -162,10 +162,10 @@ nav a:focus {
 }
 /* Default Skin */
 .banner_center {
-	width: 50%;
+	width: 70%;
 	position: absolute;
-	top: 40%;
-	left: 25%;
+	top: 30%;
+	left: 15%;
 	text-align: center;
 }
 
@@ -1672,7 +1672,7 @@ color: #d5d6d7;
 		left:0;
 	}
 	.top-imgs{
-		width:200vw;
+		width:90%;
 		margin:auto;
 		border-radius: 10px;
 		box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.4);
@@ -1712,6 +1712,7 @@ color: #d5d6d7;
 	.tab-o-c h1{
 		font-size: 4vh;
 		font-weight: bold;
+		text-align: center;
 	}
 	.tab-o-c li{
 		font-size: 20px;
@@ -1839,7 +1840,6 @@ color: #d5d6d7;
 	.centered{
 		text-align: center;
 	}
-<<<<<<< HEAD
 	.change:hover {
 		transform: rotate(360deg);
 		transition:0.5s
@@ -1854,8 +1854,21 @@ color: #d5d6d7;
 	.carul:hover{
 		z-index: 0;
 	}
-=======
-
-	
-	
->>>>>>> 601d6356da6f1b7ae58dda989c1896f152c89cdf
+	.smalli:hover {
+		animation: nunu 0.7s 1;
+		transition:0.5s
+	}
+	@keyframes nunu {
+		0%{transform: scale(1);}
+		50%{transform: scale(0.8);}
+		100%{transform: scale(1);}
+	}
+	.bigi:hover {
+		animation: nana 0.7s 1;
+		transition:0.5s
+	}
+	@keyframes nana {
+		0%{transform: scale(1);}
+		50%{transform: scale(1.2);}
+		100%{transform: scale(1);}
+	}
