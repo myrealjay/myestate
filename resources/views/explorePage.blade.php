@@ -12,6 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="images/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
@@ -33,18 +34,23 @@
 	<!------ Eng Light Box ------>	
 
 </head>
-<body onscroll="offload()"><!---
+<body>
 <div class="header" id="head">	
-    <div class="carul"></div>
+     <!--<div class="carul"></div>-->
       <div class="container"> 
          <div class="header-top">
       		 <div class="logo">
                 <a href="index.html"><img src="images/logo.png" alt=""/></a>
-              
+                <!--<h2>Bethel</h2>-->
 			 </div>
 		   <div class="top-menu">
-		   	<span class="menu"> </span>
-			<ul>
+               <div class="chi"   onclick="opener()">
+                    <!--<img class="hima" width="100%" height="width" src="{{ asset('images/hamburger.png') }}" >-->
+                    <i class="fas fa-bars"></i>
+                </div>
+               <span class="menu fas"  onclick="opener()">. </span>
+               
+			<ul id="daps">
 			 	<nav class="cl-effect-5">
 				<li><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
 				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
@@ -55,7 +61,7 @@
 				</nav>
 			 </ul>
 			 </div>
-             
+			 <!--script-nav-->
 		 <script>
 		 /*$("span.menu").click(function(){
             $(".top-menu ul").slideToggle("slow" , function(){
@@ -96,58 +102,24 @@
             </div>
             <script src="js/jquery.wmuSlider.js"></script> 
 			  <script>
-       			$('.example1').wmuSlider();         
+       			$('.example1').wmuSlider();       
+                   function D(sun){
+                        return document.getElementById(sun);
+                   }  
+                   var turner = true;
+                   function opener(){
+                       if(turner == true){
+                            D('daps').style.display = 'block';
+                            turner = false;
+                       } else{
+                            D('daps').style.display = 'none';
+                            turner = true;
+                       }
+                   }
    		     </script> 	           	      
       </div>
 	 </div>     
-    </div>-->
-    <div class="trader">
-        <div class="hammer" id="hed1d">
-			<div class="cav">
-				<div class="flutee">Dapo</div>
-				<div class="flutter">
-					<i id="ham" class="fas" onclick="chani()" >&#xf0c9;</i>
-					<ul id="ulu">
-						<li><a href="#" onclick="clxx()">Home</a></li>
-						<li><a href="#" onclick="clxx()">About</a></li>
-						<li><a href="#" onclick="clxx()">Portfolio</a></li>
-						<li><a href="#" onclick="clxx()">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-        </div>
     </div>
-        <script>
-            var xxc = true;
-			function chani(){
-				if(xxc == true){
-					D('ham').innerHTML = '&#xf00d;';
-					D('hed1d').style.height = '260px';
-					setTimeout('xxc = false', 1000);
-					D('ulu').style.display = 'block';
-				} else if(xxc == false){
-					D('ham').innerHTML = '&#xf0c9;';
-					D('hed1d').style.height = '70px';
-					xxc=true;
-				}
-			}
-			function clxx(){
-				D('ham').innerHTML = '&#xf0c9;';
-				xxc = true;
-			}
-			
-			function offload(){
-				if(window.pageYOffset>50){
-					D('hed1d').style.height = '70px';
-				} else{
-					D('hed1d').style.height = 0;
-				}
-				clxx();
-			}
-            function D(fg){
-				return document.getElementById(fg);
-			}
-        </script>
     <div class ="row conga">
         <div class="col-md-6 few-words">
             <div class="floter">
