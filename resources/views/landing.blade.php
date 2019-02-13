@@ -52,6 +52,9 @@
 				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
 				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
 				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
+				@if (!Auth::guest())
+					<li><a href="/home" ><span data-hover="dashboard">dashboard</span></a></li>
+				@endif
 				</nav>
 			 </ul>
 			 </div>
