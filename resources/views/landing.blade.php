@@ -74,7 +74,7 @@
 				   	    <div class="banner-wrap">
 				   	       	<div class="banner_center">
 				   		 		<h1>Welcome to Bethel estate</h1> 
-                                <img src="{{ asset('images/crop.jpg') }}"  class="top-imgs">
+                                <img src="{{ asset('images/crop.jpg') }}" class="top-imgs">
 				   		 	</div>
 				   		</div>
 					</article>
