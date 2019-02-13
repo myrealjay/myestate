@@ -59,6 +59,7 @@ body{
 	background-size: cover;*/
 	background-position: center;
 	min-height: 100vh;
+	padding-bottom: 5vh;
 	border-bottom: 3px solid #fff;
 }
 
@@ -69,7 +70,7 @@ body{
 	border-bottom: 3px solid #fff;
 }
 .header-top {
-	padding-top: 3em;
+	padding-top: 2em;
 }
 .logo{
 	float:left;
@@ -1640,7 +1641,7 @@ color: #d5d6d7;
 	.first-in{
 	
 	}
-	.few-words{
+	.few-wordshh{
 		min-height: 110vh;
 		padding: 15vh 7vw 5vw;
 		background: url("../images/happy-black.jpg") no-repeat;
@@ -1651,7 +1652,7 @@ color: #d5d6d7;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 	}
-	.few-words h1{
+	.few-wordshh h1{
 		font-weight: bold;
 		font-size: 5vh;
 		text-shadow: 1px 1px 5px #000;

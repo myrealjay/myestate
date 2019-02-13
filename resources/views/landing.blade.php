@@ -6,16 +6,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Housing, Realestate, OKB" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>	 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous"> 
 <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="images/favicon.png" type="image/png">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
@@ -44,7 +43,6 @@
 <body>
 <div class="header" id="head">	
      <!--<div class="carul"></div>-->
-      <div class="container"> 
          <div class="header-top">
       		 <div class="logo">
                 <a href="index.html"><img src="images/logo.png" alt=""/></a>
@@ -80,10 +78,11 @@
 		 </script>
 			<div class="clearfix"></div>
 		 </div>  
+      <div class="container"> 
 
 		  <div class="index-banner">
        	   <div class="">
-			  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:100px;">
+			  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:50px;">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -153,7 +152,7 @@
 	
 
     <div class ="row conga">
-        <div class="col-md-6 few-words">
+        <div class="col-md-6 few-wordshh">
             <div class="floter">
                 <h1>Surrounded with serene environment for family living</h1>
                 <div class="transe-text">
