@@ -12,7 +12,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="images/favicon.png" type="image/png">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
@@ -36,7 +35,7 @@
 </head>
 <body>
 <div class="header" id="head">	
-     <!--<div class="carul"></div>-->
+    <div class="carul"></div>
       <div class="container"> 
          <div class="header-top">
       		 <div class="logo">
@@ -44,13 +43,8 @@
                 <!--<h2>Bethel</h2>-->
 			 </div>
 		   <div class="top-menu">
-               <div class="chi"   onclick="opener()">
-                    <!--<img class="hima" width="100%" height="width" src="{{ asset('images/hamburger.png') }}" >-->
-                    <i class="fas fa-bars"></i>
-                </div>
-               <span class="menu fas"  onclick="opener()">. </span>
-               
-			<ul id="daps">
+		   	<span class="menu"> </span>
+			<ul>
 			 	<nav class="cl-effect-5">
 				<li><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
 				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
@@ -58,9 +52,6 @@
 				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
 				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
 				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
-				@if (!Auth::guest())
-					<li><a href="/home" ><span data-hover="dashboard">dashboard</span></a></li>
-				@endif
 				</nav>
 			 </ul>
 			 </div>
@@ -73,7 +64,6 @@
 		 </script>
 			<div class="clearfix"></div>
 		 </div>  
-
 		  <div class="index-banner">
        	   <div class="wmuSlider example1">
 			   <div class="wmuSliderWrapper">
@@ -106,26 +96,11 @@
             </div>
             <script src="js/jquery.wmuSlider.js"></script> 
 			  <script>
-       			$('.example1').wmuSlider();       
-                   function D(sun){
-                        return document.getElementById(sun);
-                   }  
-                   var turner = true;
-                   function opener(){
-                       if(turner == true){
-                            D('daps').style.display = 'block';
-                            turner = false;
-                       } else{
-                            D('daps').style.display = 'none';
-                            turner = true;
-                       }
-                   }
+       			$('.example1').wmuSlider();         
    		     </script> 	           	      
       </div>
 	 </div>     
-	</div>
-	
-
+    </div>
     <div class ="row conga">
         <div class="col-md-6 few-words">
             <div class="floter">
@@ -166,8 +141,6 @@
 		<div class="services-section" id="services">
 			<div class="container"> 
 			<div class="services-header">
-
-			
 				<h3><span>[</span> Facilities <span>]</span></h3>
 					<p>If you’ve dreamed of exchanging traffic and busy streets for a good township idyll, Bethel Estate is just what you've been waiting for.<br>
 					Owode Onirin, Owode Elede <b>(and others as listed by google map)</b>, just minutes' away, marries charm and convenience, providing a diverse range of shops and mini mall selling everything from everyday essentials to the ‘little luxuries’ that bring pleasure to your day.  </p>

@@ -58,9 +58,6 @@
 				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
 				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
 				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
-				@if (!Auth::guest())
-					<li><a href="/home" ><span data-hover="dashboard">dashboard</span></a></li>
-				@endif
 				</nav>
 			 </ul>
 			 </div>
@@ -73,7 +70,6 @@
 		 </script>
 			<div class="clearfix"></div>
 		 </div>  
-
 		  <div class="index-banner">
        	   <div class="wmuSlider example1">
 			   <div class="wmuSliderWrapper">
@@ -123,9 +119,7 @@
    		     </script> 	           	      
       </div>
 	 </div>     
-	</div>
-	
-
+    </div>
     <div class ="row conga">
         <div class="col-md-6 few-words">
             <div class="floter">
@@ -166,8 +160,6 @@
 		<div class="services-section" id="services">
 			<div class="container"> 
 			<div class="services-header">
-
-			
 				<h3><span>[</span> Facilities <span>]</span></h3>
 					<p>If you’ve dreamed of exchanging traffic and busy streets for a good township idyll, Bethel Estate is just what you've been waiting for.<br>
 					Owode Onirin, Owode Elede <b>(and others as listed by google map)</b>, just minutes' away, marries charm and convenience, providing a diverse range of shops and mini mall selling everything from everyday essentials to the ‘little luxuries’ that bring pleasure to your day.  </p>
