@@ -7,9 +7,13 @@
 	<meta name="keywords" content="Housing, Realestate, OKB" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	    
-	<script src="js/jquery.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous"> 
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="images/favicon.png" type="image/png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -21,8 +25,11 @@
 				event.preventDefault();
 				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 			});
+			
 		});
 	</script>
+
+
 	<!------ Light Box ------>
 	<link rel="stylesheet" href="css/swipebox.css">
 	<script src="js/jquery.swipebox.min.js"></script> 
@@ -75,34 +82,53 @@
 		 </div>  
 
 		  <div class="index-banner">
-       	   <div class="wmuSlider example1">
-			   <div class="wmuSliderWrapper">
-				   <article style="position: absolute; width: 100%; opacity: 0;"> 
-				   	    <div class="banner-wrap">
-				   	       	<div class="banner_center">
-				   		 		<h1>Welcome to Bethel estate</h1> 
-                                <img src="{{ asset('images/crop.jpg') }}"  class="top-imgs">
-				   		 	</div>
-				   		</div>
-					</article>
-				   <article style="position: relative; width: 100%; opacity: 1;"> 
-				   	   	<div class="banner-wrap">
-				   	      <div class="banner_center">
-				   		 		<h1>Take a tour of our estate</h1> 
-				   		 		<img src="{{ asset('images/crop2.jpg') }}"  class="top-imgs">
-				   		 	</div>
-				   		</div>
-				   </article>
-				   <article style="position: absolute; width: 100%; opacity: 0;">
-				   	  	<div class="banner-wrap">
-				   	       <div class="banner_center">
-				   		 		<h1>A rare opportunity</h1> 
-				   		 		<img src="{{ asset('images/crop3.jpg') }}"  class="top-imgs">
-				   		 	</div>
-				   		</div>
-					 </article>
-				 </div>
-				
+       	   <div class="">
+			  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:100px;">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+						<img src="images/crop.jpg" alt="Chania">
+						<div class="carousel-caption">
+							<h3>Los Angeles</h3>
+							<p>LA is always so much fun!</p>
+						</div>
+						</div>
+
+						<div class="item">
+						<img src="images/crop2.jpg" alt="Chicago">
+						<div class="carousel-caption">
+							<h3>Chicago</h3>
+							<p>Thank you, Chicago!</p>
+						</div>
+						</div>
+
+						<div class="item">
+						<img src="images/crop3.jpg" alt="New York">
+						<div class="carousel-caption">
+							<h3>New York</h3>
+							<p>We love the Big Apple!</p>
+						</div>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+									
             </div>
             <script src="js/jquery.wmuSlider.js"></script> 
 			  <script>
