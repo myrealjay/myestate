@@ -81,8 +81,8 @@
       <div class="container"> 
 
 		  <div class="index-banner">
-       	   <div class="">
-			  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:50px;">
+       	   <div class="niner">
+			  <div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -93,7 +93,7 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
 						<div class="item active">
-						<img src="images/crop.jpg" alt="Chania">
+						<img src="images/crop.jpg" alt="Bethel Estate" class="top-imgs">
 						<div class="carousel-caption">
 							<h3>Los Angeles</h3>
 							<p>LA is always so much fun!</p>
@@ -101,7 +101,7 @@
 						</div>
 
 						<div class="item">
-						<img src="images/crop2.jpg" alt="Chicago">
+						<img src="images/crop2.jpg" alt="Bethel Estate" class="top-imgs">
 						<div class="carousel-caption">
 							<h3>Chicago</h3>
 							<p>Thank you, Chicago!</p>
@@ -109,7 +109,7 @@
 						</div>
 
 						<div class="item">
-						<img src="images/crop3.jpg" alt="New York">
+						<img src="images/crop3.jpg" alt="Bethel Estate" class="top-imgs">
 						<div class="carousel-caption">
 							<h3>New York</h3>
 							<p>We love the Big Apple!</p>

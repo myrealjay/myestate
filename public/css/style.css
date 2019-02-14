@@ -1674,10 +1674,10 @@ color: #d5d6d7;
 		left:0;
 	}
 	.top-imgs{
-		width:90%;
+		width:100%;
 		margin:auto;
 		border-radius: 10px;
-		box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.4);
+		box-shadow: 2px 7px 15px 15px rgba(0, 0, 0, 0.4);
 		animation:anim2 7s infinite;
 		transition: 0.3s;
 	}
@@ -1691,6 +1691,19 @@ color: #d5d6d7;
 		5%{transform: scale(1.2);}
 		10%{transform: scale(1);}
 		100%{transform: scale(1);}
+	}
+	.niner{
+		width:80%;
+		margin:5vh auto 0;
+		box-shadow: 2px 7px 15px 9px rgba(0, 0, 0, 0.4);
+		border-radius: 10px;
+		border:2px solid #000;
+		animation:animt 2s 1;
+	}
+	@keyframes animt{
+		0%{transform: translate(0, 130vh)}
+		50%{transform: translate(0, 100px)}
+		100%{transform: translate(0, 0)}
 	}
 	.im-div{
 		width:60vw;
