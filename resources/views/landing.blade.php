@@ -57,7 +57,7 @@
 	 <div class="widthy">
          <div class="header-top">
       		 <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                <a href="{{ url('') }}"><img src="images/logo.png" alt=""/></a>
                 <!--<h2>Bethel</h2>-->
 			 </div>
 		   <div class="top-menu">
@@ -158,7 +158,7 @@
 					turner = true;
 				}
 			}
-			setTimeout("D('karul').style.display = 'none'", 3490);
+			setTimeout("D('karul').style.display = 'none'", 3390);
 		</script> 	           	      
 	</div>
 </div>     
@@ -384,7 +384,7 @@
 			</div>
 			<div class="contact">
 				<div class="contactgrid3">
-					<a href="{{ route('register') }}"><input type="button" value="[buy now]"></a>
+					<a href="{{ route('register') }}"><button type="button" class="buyer">Buy now</button></a>
 				</div>
 				<div class="clearfix"></div>
 			</div>

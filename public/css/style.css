@@ -1876,6 +1876,19 @@ color: #d5d6d7;
 		transform: rotate(360deg);
 		transition:0.5s
 	}
+	.buyer{
+		font-size: 18px;
+		padding:10px;
+		font-weight: bold;
+		background-color: #030e14;
+		border:1px solid #000;
+		border-radius: 4px;
+		transition: 0.4s;
+	}
+	.buyer:hover{
+		background-color: #2252b8;
+		color:#fff;
+	}
 	.carul {
 		position:absolute;
 		width:0;
