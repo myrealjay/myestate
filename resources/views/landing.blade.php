@@ -41,8 +41,10 @@
 
 </head>
 <body>
+<div class="total">
 <div class="header" id="head">	
      <!--<div class="carul"></div>-->
+	 <div class="widthy">
          <div class="header-top">
       		 <div class="logo">
                 <a href="index.html"><img src="images/logo.png" alt=""/></a>
@@ -78,6 +80,7 @@
 		 </script>
 			<div class="clearfix"></div>
 		 </div>  
+	</div>
       <div class="container"> 
 
 		  <div class="index-banner">
@@ -385,7 +388,7 @@
 				</div>		
 			</div>
 
-
+		</div>
 		</body>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		</html>

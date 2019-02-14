@@ -1698,11 +1698,11 @@ color: #d5d6d7;
 		box-shadow: 2px 7px 15px 9px rgba(0, 0, 0, 0.4);
 		border-radius: 10px;
 		border:2px solid #000;
-		animation:animt 2s 1;
+		animation:animt 5s 1;
 	}
 	@keyframes animt{
 		0%{transform: translate(0, 130vh)}
-		50%{transform: translate(0, 100px)}
+		80%{transform: translate(0, 130vh)}
 		100%{transform: translate(0, 0)}
 	}
 	.im-div{
@@ -1937,4 +1937,12 @@ color: #d5d6d7;
 		.chi{
 			display:block
 		}
+	}
+	.widthy{
+		width:90%;
+		margin:auto;
+	}
+	.total{
+		width:100%;
+		overflow:hidden;
 	}
