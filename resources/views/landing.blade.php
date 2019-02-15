@@ -349,8 +349,17 @@
 						<div class="contactgrid1">
 							<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
 						</div>
-						<div class="contactgrid2">
-							<input type="button" value="[send message]">
+						<div class="centered">
+							<br>
+							<input type="button" class="sender" value="Send message">
+						</div>
+						<br>
+						<div class="centered">
+							<br>
+							<p>To get a detailed run through of our estate<p>
+							<br>
+							<button id="brochure" onclick="downloader()" class="brochure">Download Brochure</button>
+							<br><br><span id="helper"></span>
 						</div>
 					</div>
 				</div>
@@ -407,6 +416,22 @@
 					 		$().UItoTop({ easingType: 'easeOutQuart' });
 
 					 	});
+						 function downloader(){
+							 D('brochure').innerHTML = 'processing';
+							 D('helper').innerHTML = '';
+							 setTimeout(call1, 2000);
+							 setTimeout('call2()', 3000);
+							 setTimeout('call3()', 6000);
+						 }
+							 function call1(){
+								D("helper").innerHTML = "Download Started"
+							 }
+							 function call2(){
+								D('brochure').innerHTML = 'Download Brochure';
+							 }
+							 function call3(){
+								D("helper").innerHTML = ""
+							 }
 					 </script>
 					 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 					</div>

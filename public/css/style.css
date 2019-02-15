@@ -667,6 +667,7 @@ div#portfoliolist {
 }
 .about-section {
 	padding:3em 0;
+	font-size: 14px;
 }
 .about-header {
 	text-align: center;
@@ -2026,6 +2027,33 @@ color: #d5d6d7;
 	}
 	.slider-text p{
 		font-size: 16px;
+	}
+	.brochure{
+		border-radius: 5px;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 15px 30px;
+		background-color: #fff;
+		color:#000;
+		border:1px solid #000;
+		transition-duration: 0.5s;
+	}
+	.brochure:hover{
+		color:#fff;
+		background-color: #2a404e;
+		box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.664);
+	}
+	.sender{
+		background-color: #fff;
+		padding:5px;
+		border-radius: 4px;
+		border:1px solid #034191;
+		font-weight: bold;
+	}
+	.sender:hover{
+		background-color: #6a7da7;
+		border:1px solid #000;
+		color:#fff;
 	}
 	@media only screen and (max-width: 768px){
 		.chi{
