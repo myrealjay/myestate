@@ -29,7 +29,7 @@ Route::post('sendmail',function(Request $request){
     $cust_email = $request->email;
     $phone = $request->phone;
     $content = $request->message;
-    $email="nwan.james@okbcoy.com.ng";
+    $email="olayinka.binuyo@okbcoy.com.ng";
     
     Mail::send('mymail', ['phone'=>$phone,'content'=>$content],
     function($mail) use ($email,$cust_email){
