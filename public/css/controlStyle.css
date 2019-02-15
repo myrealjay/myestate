@@ -59,6 +59,7 @@ body{
 	background-size: cover;*/
 	background-position: center;
 	min-height: 100vh;
+	padding-bottom: 8vh;
 	border-bottom: 3px solid #fff;
 }
 
@@ -69,7 +70,7 @@ body{
 	border-bottom: 3px solid #fff;
 }
 .header-top {
-	padding-top: 3em;
+	padding-top: 2em;
 }
 .logo{
 	float:left;
@@ -84,7 +85,7 @@ body{
 	padding: 5px 15px 0px 15px;
 }
 .top-menu ul li a{
-	font-size: 1.1em;
+	font-size: 16px;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -1166,6 +1167,7 @@ color: #d5d6d7;
 	{
 		display:none;
 	}
+	
 	.top-menu  ul li 
 	{
 		font-size: 14px;
@@ -1639,7 +1641,7 @@ color: #d5d6d7;
 	.first-in{
 	
 	}
-	.few-words{
+	.few-wordshh{
 		min-height: 110vh;
 		padding: 15vh 7vw 5vw;
 		background: url("../images/happy-black.jpg") no-repeat;
@@ -1650,7 +1652,7 @@ color: #d5d6d7;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 	}
-	.few-words h1{
+	.few-wordshh h1{
 		font-weight: bold;
 		font-size: 5vh;
 		text-shadow: 1px 1px 5px #000;
@@ -1663,6 +1665,7 @@ color: #d5d6d7;
 		max-width: 500px;
 		padding:1vh 2vw;
 		border-radius:5px;
+		font-size:14px;
 	}
 	.floter{
 		position:absolute;
@@ -1672,10 +1675,10 @@ color: #d5d6d7;
 		left:0;
 	}
 	.top-imgs{
-		width:90%;
+		width:100%;
 		margin:auto;
 		border-radius: 10px;
-		box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.4);
+		box-shadow: 2px 7px 15px 15px rgba(0, 0, 0, 0.4);
 		animation:anim2 7s infinite;
 		transition: 0.3s;
 	}
@@ -1689,6 +1692,19 @@ color: #d5d6d7;
 		5%{transform: scale(1.2);}
 		10%{transform: scale(1);}
 		100%{transform: scale(1);}
+	}
+	.niner{
+		width:80%;
+		margin:5vh auto 0;
+		box-shadow: 2px 7px 15px 9px rgba(0, 0, 0, 0.4);
+		border-radius: 10px;
+		border:2px solid #000;
+		animation:animt 4s 1;
+	}
+	@keyframes animt{
+		0%{transform: translate(0, 130vh)}
+		80%{transform: translate(0, 130vh)}
+		100%{transform: translate(0, 0)}
 	}
 	.im-div{
 		width:60vw;
@@ -1809,11 +1825,19 @@ color: #d5d6d7;
 	}
 	.site-locat-info{
 		padding:0 3vw 4vh;
-		line-height: 2;
 		text-align: center;
+		font-size: 14px;
 	}
 	.site-locat-info h2{
 		text-align: center;
+	}
+	.site-locat-info p{
+		text-align: justify;
+	}
+	.site-locat-info h5{
+		text-align: center;
+		font-weight: bold;
+		font-size: 15px;
 	}
 	.bod{
 		border-bottom: 2px solid #aaa;
@@ -1852,15 +1876,92 @@ color: #d5d6d7;
 		transform: rotate(360deg);
 		transition:0.5s
 	}
+	.buyer{
+		font-size: 18px;
+		padding:10px;
+		font-weight: bold;
+		background-color: #030e14;
+		border:1px solid #000;
+		border-radius: 4px;
+		transition: 0.4s;
+	}
+	.buyer:hover{
+		background-color: #2252b8;
+		color:#fff;
+	}
 	.carul {
 		position:absolute;
-		width:100%;
-		height:100%;
-		background-color: #22B4B822;
+		width:0;
+		height:0;
+		background-color: rgba(7, 29, 43, 0.80);
 		z-index: 0;
+		animation: rull 3.5s 1;
+		padding: 14vh 0;
 	}
-	.carul:hover{
-		z-index: 0;
+	@keyframes rull{
+		0%{opacity: 1; width:100%; height:100%}
+		90%{opacity: 1; width:100%; height:100%}
+		99%{opacity: 0; width:100%; height:100%}
+		100%{opacity: 1;width:0; height:0;}
+	}
+	.animation-slides{
+		font-size: 3vw;
+		color:#fff;
+		font-weight: bold;
+		text-align:center;
+		padding:3vh 0;
+		animation: slide 4.5s 1;
+	}
+	@keyframes slide{
+		0%{transform: translate(150vw, 0);}
+		10%{transform: translate(0, 0);}
+		10%{transform: scale(1.04);}
+		15%{transform: scale(1.1);}
+		20%{transform: scale(1);}
+		100%{transform: translate(0, 0), scale(1);}
+	}
+	.animation-slides2{
+		font-size: 3vw;
+		color:#fff;
+		font-weight: bold;
+		text-align:center;
+		padding:3vh 0;
+		animation: slide2 4.5s 1;
+	}
+	@keyframes slide2{
+		0%{transform: translate(-150vw, 0);}
+		10%{transform: translate(-150vw, 0);}
+		20%{transform: translate(0, 0);}
+		20%{transform: scale(1.04);}
+		25%{transform: scale(1.1);}
+		30%{transform: scale(1);}
+		100%{transform: translate(0, 0), scale(1);}
+	}
+	.animation-slides3{
+		font-size: 3vw;
+		color:#fff;
+		font-weight: bold;
+		text-align:center;
+		padding:0 0;
+		animation: slide3 4.5s 1;
+		width:50%;
+		max-width: 500px;
+		margin:auto;
+	}
+	@keyframes slide3{
+		0%{opacity:0;}
+		25%{opacity:0; transform: translate(0, 10vh);}
+		25%{transform: scale(1.2);}
+		35%{opacity:1; transform: translate(0, 0);}
+		35%{transform: scale(1);}
+		100%{opacity:1; transform:scale(1);}
+	}
+	.in-imgs{
+		width:100%;
+		margin:auto;
+		border-radius: 10px;
+		box-shadow: 1px 3px 6px 3px rgba(0, 0, 0, 0.4);
+		transition: 0.3s;
 	}
 	.smalli:hover {
 		animation: nunu 0.7s 1;
@@ -1882,4 +1983,58 @@ color: #d5d6d7;
 	}
 	.third-in h1:hover{
 		transform:scale(1.1);
+	}
+	.menu{
+		font-weight: bold;
+		color: rgb(58, 38, 24);
+		font-size: 27px;
+		transition: 0.4s;
+		display:none;
+	}
+	.menu:hover{
+		animation:fluid2 0.4s 1;;
+	}
+	.menu:active{
+		animation:fluid 0.8s 1;
+	}
+	@keyframes fluid{
+		0%{transform: scale(1, 1)}
+		40%{transform: scale(1, 1.5)}
+		100%{transform: scale(1, 1)}
+	}
+	@keyframes fluid2{
+		0%{transform: scale(1, 1)}
+		40%{transform: scale(1.3, 1)}
+		100%{transform: scale(1, 1)}
+	}
+	.chi{
+		color:#fff;
+		display:none;
+		float:right;
+		width:30px;
+		font-weight: bold;
+		font-size: 27px;
+		transition: 0.4s;
+	}
+	.hima{
+		width:100%;
+	}
+	.slider-text h3{
+		font-size: 3vw;
+	}
+	.slider-text p{
+		font-size: 14px;
+	}
+	@media only screen and (max-width: 768px){
+		.chi{
+			display:block
+		}
+	}
+	.widthy{
+		width:90%;
+		margin:auto;
+	}
+	.total{
+		width:100%;
+		overflow:hidden;
 	}

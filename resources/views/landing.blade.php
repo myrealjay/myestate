@@ -91,7 +91,7 @@
 			<div class="clearfix"></div>
 		 </div>  
 	</div>
-      <div class="container"> 
+     <!-- <div class="container"> -->
 
 	<div class="index-banner">
 		<div class="niner">
@@ -106,7 +106,7 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="images/crop.jpg" alt="Bethel Estate" class="top-imgs">
+						<img src="images/cropb.jpg" alt="Bethel Estate" class="top-imgs">
 						<div class="carousel-caption slider-text">
 							<h3>Welcome to Bethel Estate</h3>
 							<p>fore view of the serene environment</p>
@@ -114,7 +114,7 @@
 					</div>
 
 					<div class="item">
-						<img src="images/crop2.jpg" alt="Bethel Estate" class="top-imgs">
+						<img src="images/cropb2.jpg" alt="Bethel Estate" class="top-imgs">
 						<div class="carousel-caption slider-text">
 							<h3>A tour of our estate</h3>
 							<p>An aerial Photography</p>
@@ -122,7 +122,7 @@
 					</div>
 
 					<div class="item">
-						<img src="images/crop3.jpg" alt="Bethel Estate" class="top-imgs">
+						<img src="images/cropb3.jpg" alt="Bethel Estate" class="top-imgs">
 						<div class="carousel-caption slider-text">
 							<h3>A rare opportunity</h3>
 							<p>marginal view of the serene environment</p>
@@ -161,7 +161,7 @@
 			setTimeout("D('karul').style.display = 'none'", 3390);
 		</script> 	           	      
 	</div>
-</div>     
+<!--</div> container close-->    
 </div>
 
 
