@@ -41,44 +41,57 @@
 
 </head>
 <body>
-	<div class="header" id="head">	
-		<!--<div class="carul"></div>-->
-		<div class="header-top">
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""/></a>
-				<!--<h2>Bethel</h2>-->
-			</div>
-			<div class="top-menu">
-				<div class="chi"   onclick="opener()">
-					<!--<img class="hima" width="100%" height="width" src="{{ asset('images/hamburger.png') }}" >-->
-					<i class="fas fa-bars"></i>
-				</div>
-				<span class="menu fas"  onclick="opener()">. </span>
-
-				<ul id="daps">
-					<nav class="cl-effect-5">
-						<li><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
-						<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
-						<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
-						<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
-						<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
-						<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
-						@if (!Auth::guest())
-						<li><a href="/home" ><span data-hover="dashboard">dashboard</span></a></li>
-						@endif
-					</nav>
-				</ul>
-			</div>
-			<!--script-nav-->
-			<script>
+<div class="total">
+<div class="header" id="head">	
+     <div class="carul" id="karul">
+		 <div class="animation-slides">
+			 Welcome to bethel estate
+		 </div>
+		 <div class="animation-slides2">
+			 The home of your dreams
+		 </div>
+		 <div class="animation-slides3">
+		 	<img width="100%" class="in-imgs" src="{{ asset('images/sm2.jpg') }}">
+		 </div>
+	 </div>
+	 <div class="widthy">
+         <div class="header-top">
+      		 <div class="logo">
+                <a href="{{ url('') }}"><img src="images/logo.png" alt=""/></a>
+                <!--<h2>Bethel</h2>-->
+			 </div>
+		   <div class="top-menu">
+               <div class="chi"   onclick="opener()">
+                    <!--<img class="hima" width="100%" height="width" src="{{ asset('images/hamburger.png') }}" >-->
+                    <i class="fas fa-bars"></i>
+                </div>
+               <span class="menu fas"  onclick="opener()">. </span>
+               
+			<ul id="daps">
+			 	<nav class="cl-effect-5">
+				<li style="font-size:14px"><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
+				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
+				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
+				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
+				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
+				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
+				@if (!Auth::guest())
+					<li><a href="/home" ><span data-hover="dashboard">dashboard</span></a></li>
+				@endif
+				</nav>
+			 </ul>
+			 </div>
+			 <!--script-nav-->
+		 <script>
 		 /*$("span.menu").click(function(){
             $(".top-menu ul").slideToggle("slow" , function(){
             });
-        });*/
-    </script>
-    <div class="clearfix"></div>
-</div>  
-<div class="container"> 
+		 });*/
+		 </script>
+			<div class="clearfix"></div>
+		 </div>  
+	</div>
+     <!-- <div class="container"> -->
 
 	<div class="index-banner">
 		<div class="niner">
@@ -93,24 +106,24 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="images/crop.jpg" alt="Bethel Estate" class="top-imgs">
-						<div class="carousel-caption">
+						<img src="images/cropb.jpg" alt="Bethel Estate" class="top-imgs">
+						<div class="carousel-caption slider-text">
 							<h3>Welcome to Bethel Estate</h3>
 							<p>fore view of the serene environment</p>
 						</div>
 					</div>
 
 					<div class="item">
-						<img src="images/crop2.jpg" alt="Bethel Estate" class="top-imgs">
-						<div class="carousel-caption">
+						<img src="images/cropb2.jpg" alt="Bethel Estate" class="top-imgs">
+						<div class="carousel-caption slider-text">
 							<h3>A tour of our estate</h3>
 							<p>An aerial Photography</p>
 						</div>
 					</div>
 
 					<div class="item">
-						<img src="images/crop3.jpg" alt="Bethel Estate" class="top-imgs">
-						<div class="carousel-caption">
+						<img src="images/cropb3.jpg" alt="Bethel Estate" class="top-imgs">
+						<div class="carousel-caption slider-text">
 							<h3>A rare opportunity</h3>
 							<p>marginal view of the serene environment</p>
 						</div>
@@ -145,9 +158,10 @@
 					turner = true;
 				}
 			}
+			setTimeout("D('karul').style.display = 'none'", 3390);
 		</script> 	           	      
 	</div>
-</div>     
+<!--</div> container close-->    
 </div>
 
 
@@ -246,7 +260,7 @@
 				</div>
 				<hr class="divider" />
 				<h3><span>[</span> Floor Plans <span>]</span></h3>
-				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+				<p>OKB and Associates floor plan information awaiting, please finalize and give us the apropriate info to fill in as soon as possible </p>
 				<div class="row">
 					<div class="col-md-6">
 						<div class="full-site change">
@@ -284,7 +298,8 @@
 					<p class="text-justify">With the proposed Forth Mainland Bridge within reach, you can be rest assured that Laggos Island is withing reach. Mile 12 Market affords you an ample opportunity to get all what you need within reach ranging from daily necessity which are foodstuffs to clothing, groceries, household equipment and lots more<br> A Gas plant within easy reach ensure you don't run out of gas. <br>
 						In the pretty, serene environment, discover delightful shops, quirky boutiques and mouth-watering collection of eateries, Bars where you can easily relax after a long day at work. 
 					Bethel estate is central to both Island and Mainland with just an hour drive to the Island. </p>
-					<p><b><center>Facilities and Amenities</center></b></p>
+					<br>
+					<h5>Facilities and Amenities</h5>
 					<ul class="col-md-8 text-left">
 						<li>Round the clock security service</li>
 						<li>Lush Green Areas</li>
@@ -299,9 +314,10 @@
 					<li>Central power generator</li>
 				</ul>
 			</div>
-		</div>
-		<div class="arrow">
-			<a href="#about" class="scroll"><img src="images/arrow.png" alt=""/></a>
+			<div class="clearfix"></div>
+			<div class="arrow">
+				<a href="#about" class="scroll"><img src="images/arrow.png" alt=""/></a>
+			</div>
 		</div>
 	</div>
 	<!-- portfolio-section-ends -->
@@ -368,7 +384,7 @@
 			</div>
 			<div class="contact">
 				<div class="contactgrid3">
-					<a href="{{ route('register') }}"><input type="button" value="[buy now]"></a>
+					<a href="{{ route('register') }}"><button type="button" class="buyer">Buy now</button></a>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -398,7 +414,7 @@
 				</div>		
 			</div>
 
-
+		</div>
 		</body>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		</html>
