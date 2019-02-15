@@ -234,9 +234,9 @@
 		
 		<div class="third-in">
 			<h2>Here are some more reasons why you would just love Bethel estate</h2><br>
-			<h1>. Proximity to town and Mile 12 market</h1><br>
-			<h1>. Proximity to gas plant</h1><br>
-			<h1>. Low cost units</h1>
+			<h1>. Proximity to Ikeja City Mall</h1><br>
+			<h1>. Proximity to Ikorodu</h1><br>
+			<h1>. Less than an hour drive to Lagos Island</h1>
 		</div>
 		<div class="works-section" id="work">
 			<div class="works-header">
