@@ -140,6 +140,7 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
+			
 
 		</div>
 		<script src="js/jquery.wmuSlider.js"></script> 
@@ -161,6 +162,11 @@
 			setTimeout("D('karul').style.display = 'none'", 3390);
 		</script> 	           	      
 	</div>
+	@if (isset($success))
+		<span class="invalid-feedback" role="alert">
+			<strong>{{ $success }}</strong>
+		</span>
+	@endif
 <!--</div> container close-->    
 </div>
 
@@ -345,19 +351,37 @@
 						<div class="centered">
 							Need to make an enquiry?
 						</div>
+						<form method="post" action="/sendmail">
+						@csrf
 						<div class="contactgrid">
-							<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
+							<input name="email" type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}" required>
+							@if ($errors->has('email'))
+								<span class="invalid-feedback" role="alert">
+									<strong>{{ $errors->first('email') }}</strong>
+								</span>
+							@endif
 						</div>
 						<div class="contactgrid">
-							<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
+							<input name="phone" type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}" required>
+							@if ($errors->has('phone'))
+								<span class="invalid-feedback" role="alert">
+									<strong>{{ $errors->first('phone') }}</strong>
+								</span>
+							@endif
 						</div>
 						<div class="contactgrid1">
-							<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+							<textarea name="message" onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" required>Your Message</textarea>
+							@if ($errors->has('message'))
+								<span class="invalid-feedback" role="alert">
+									<strong>{{ $errors->first('message') }}</strong>
+								</span>
+							@endif
 						</div>
 						<div class="centered">
 							<br>
-							<input type="button" class="sender" value="Send message">
+							<input type="submit" class="sender" value="Send message">
 						</div>
+						</form>
 						<br>
 						<div class="centered">
 							<br>

@@ -1,15 +1,6 @@
 <?php
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use Illuminate\Http\Request;
+use Mail;
 
 Route::get('/', function () {
     return view('landing');
@@ -32,4 +23,23 @@ Route::get('broschure',function(){
             );
 
     return Response::download($file, 'filename.pdf', $headers);
+});
+
+Route::post('sendmail',function(Request $request){
+    $cust_email = $request->email;
+    $phone = $request->phone;
+    $content = $request->message;
+    $email="olayinka.binuyo@okbcoy.com.ng";
+    
+    Mail::send('mymail', ['phone'=>$phone,'content'=>$content],
+    function($mail) use ($email,$cust_email){
+        $mail->from('nwachukwujames7@gmail.com',"Bethel estate");
+        $mail->to($email, "Mr Yinka");
+        $mail->replyTo($cust_email);
+        $mail->subject('ENQUIRY');
+    });
+
+    echo '<script>alert("Your message has been received, we will attend to you shortly");</script>';
+
+    return redirect('/')->with('success','Your message has been received, we will attend to you shortly');
 });
