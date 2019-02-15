@@ -358,7 +358,7 @@
 							<br>
 							<p>To get a detailed run through of our estate<p>
 							<br>
-							<button id="brochure" onclick="downloader()" class="brochure">Download Brochure</button>
+							<button id="brochure" onclick="downloader()" class="brochure"><a href="/broschure">Download Brochure</a></button>
 							<br><br><span id="helper"></span>
 						</div>
 					</div>
