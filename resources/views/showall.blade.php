@@ -10,7 +10,7 @@
         <div class="box box-primary">
             <div class="box-body" id="print_content">
                 <table class="table table-striped"> 
-                    <thead style="background-color:blue; color:white;">
+                    <thead style="background-color:#2A44A9; color:white;">
                         <th>NAME</th>
                         <th>ADDRESS</th>
                         <th>SEX</th>
@@ -20,7 +20,7 @@
                     </thead>
                    <tbody>
                     @foreach($agents as $agent)
-                        <tr>
+                        <tr style="background-color:#DFE2EF;">
                             <td>{{ $agent->fullname }}</td>
                             <td>{{ $agent->address }}</td>
                             <td>{{ $agent->sex }}</td>

@@ -1,5 +1,5 @@
 <table class="table table-responsive" id="agents-table">
-    <thead>
+    <thead style="background-color:#2A44A9;color:white;">
         <tr>
             <th>Fullname</th>
         <th>Sex</th>

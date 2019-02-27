@@ -13,9 +13,9 @@
                     @include('agents.show_fields')
                 </div>
                 <div class="row table-responsive" style="padding:20px;">
-                <h4 style="color:blue; font-weight:bold;">Customers <span style="color:red;">{{ $counter }}</span> remaining <span style="color:red;">{{ 23-$counter }}</span></h4>
+                <h4 style="color:#2A44A9; font-weight:bold;">Customers <span style="color:red;">{{ $counter }}</span> remaining <span style="color:red;">{{ 23-$counter }}</span></h4>
                 <table class="table table-striped"> 
-                <thead style="background-color:blue; color:white;">
+                <thead style="background-color:#2A44A9; color:white;">
                     <th>NAME</th>
                     <th>ADDRESS</th>
                     <th>EMPLOYMENT STATUS</th>
@@ -29,7 +29,7 @@
                     </thead>
                     <tbody>
                     @foreach($customers as $customer)
-                        <tr style="background-color:#C6DCDE; font-weight:bold;">
+                        <tr style="background-color:#DFE2EF; font-weight:bold;">
                             <td>{{ $customer->fullname }}</td>
                             <td>{{ $customer->address }}</td>
                             <td>{{ $customer->empstatus }}</td>
