@@ -257,6 +257,11 @@
 			<h1>. Proximity to Ikeja City Mall</h1><br>
 			<h1>. Directly off Ikorodu dual carriage road</h1><br>
 			<h1>. Less than an hour drive to Lagos Island</h1>
+			<h1>. Proximity to Maryland Mall</h1>
+			<h1>. Serene Environment</h1>
+			<h1>. Children Frendly </h1>
+			<h1>. Paved Roads</h1>
+			<h1>. Recreational Areas</h1>
 		</div>
 		<div class="works-section" id="work">
 			<div class="works-header">
@@ -331,8 +336,8 @@
 		<div class="container">
 			<div class="about-header">
 				<h3><span>[</span> Find Us <span>]</span></h3>
-				<p><i class="fa fa-map-marker"></i> Owode Elede, Along Ikorodu Road, Lagos, Nigeria. </p> 
-				<p><i class="fa fa-phone"></i> +2348000000000000, +2348000000000 </p> 
+				<p><i class="fa fa-map-marker"></i> 30, Lanre Awolokun Street, Gbagade, Lagos. </p> 
+				<p><i class="fa fa-phone"></i> 234 806 941 6226 </p> 
 				<p><i class="fa fa-envelope"></i> contact@bethelestate.com.ng </p> 
 			</div>
 			<div class="about-sectiongrids">

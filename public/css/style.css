@@ -1787,6 +1787,7 @@ color: #d5d6d7;
 	}
 	.third-in h1{
 		font-weight: bold;
+		line-height: 2;
 		font-size: 5vh;
 		text-shadow: 1px 1px 5px #000;
 		text-align: center;
