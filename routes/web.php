@@ -42,3 +42,8 @@ Route::post('sendmail',function(Request $request){
 
     return redirect('/')->with('success','Your message has been received, we will attend to you shortly');
 });
+
+Route::resource('agents', 'AgentController');
+
+Route::resource('customers', 'CustomerController');
+Route::get('showall', 'AgentController@showall');

@@ -26,9 +26,9 @@ class HomeController extends Controller
     {
         $user=\Auth::user();
         $data=personaldata::where('userid',$user->id)->get()->first();
-        if(!$data){
+        if(!$data && $user->role==1){
             return view('personaldatas.create');
         }
-        return view('home');
+        return view('home')->with('user',$user);
     }
 }

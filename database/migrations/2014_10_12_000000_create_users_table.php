@@ -20,10 +20,10 @@ class CreateUsersTable extends Migration
             $table->string('firstname');
             $table->string('middlename')->nullable();
             $table->string('gender');
-            $table->string('dob');
-            $table->string('pob');
-            $table->string('status');
-            $table->string('nationality');
+            $table->string('dob')->nullable();
+            $table->string('pob')->nullable();
+            $table->string('status')->nullable();
+            $table->string('nationality')->nullable();
             $table->string('address');
             $table->string('phone');
             $table->tinyInteger('role')->default('1');
