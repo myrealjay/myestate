@@ -80,14 +80,14 @@ class CustomerController extends AppBaseController
             foreach($users as $user){
                 array_push($emails,$user->email);
             }
-            /*
+            
             $newname=$user->surname.' '.$user->firstname.' '.$user->middlename;
             Mail::send('message2', ['fullname' =>$newname ,'phone' => $user->phone, 'custname' =>$input['fullname'],'custphone'=>$input['phone'],'apartment'=>$input['apertment']],
                 function($mail) use ($emails){
                     $mail->from('esmafconference@gmail.com',"Bethel estate");
                     $mail->to($emails, "Bethel estate");
                     $mail->subject('PURCHASE NOTIFICATION');
-                });*/
+                });
 
 
             Flash::success('Customer saved successfully.');
