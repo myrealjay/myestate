@@ -24,6 +24,16 @@ Route::get('broschure',function(){
     return Response::download($file, 'filename.pdf', $headers);
 });
 
+Route::get('downloadapp',function(){
+    $file= public_path(). "/download/bethel.apk";
+
+    $headers = array(
+              'Content-Type: application/vnd.android.package-archive',
+            );
+
+    return Response::download($file, 'bethel.apk', $headers);
+});
+
 Route::post('sendmail',function(Request $request){
     $cust_email = $request->email;
     $phone = $request->phone;

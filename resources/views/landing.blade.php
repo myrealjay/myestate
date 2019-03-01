@@ -389,6 +389,10 @@
 							<br>
 							<button id="brochure" onclick="downloader()" class="brochure"><a href="/broschure">Download Brochure</a></button>
 							<br><br><span id="helper"></span>
+
+							<br>
+							<button id="brochure" class="brochure"><a href="/downloadapp">Download Agent App</a></button>
+							<br><br><span id="helper"></span>
 						</div>
 					</div>
 				</div>
