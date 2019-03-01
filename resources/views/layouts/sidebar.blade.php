@@ -35,7 +35,7 @@
         </form>-->
         <!-- Sidebar Menu -->
 
-        <ul class="sidebar-menu" data-widget="tree" style="background-color:#312C2C;">
+        <ul class="sidebar-menu" data-widget="tree" style="background-color:#15317C">
             @include('layouts.menu')
         </ul>
         <!-- /.sidebar-menu -->

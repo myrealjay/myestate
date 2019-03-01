@@ -54,15 +54,15 @@
 @if (!Auth::guest())
     <div class="wrapper">
         <!-- Main Header -->
-        <header class="main-header mysidebar" style="background-color:#6A6C6E !important;">
+        <header class="main-header mysidebar" style="background-color:#15317C !important;">
 
             <!-- Logo -->
-            <a href="/" class="logo mysidebar" style="background-color:#363637 !important;">
+            <a href="/" class="logo mysidebar" style="background-color:#15317C !important;">
                 <b>Bethel Estate</b>
             </a>
 
             <!-- Header Navbar -->
-            <nav class="navbar navbar-static-top mysidebar" role="navigation" style="background-color:#444546 !important;">
+            <nav class="navbar navbar-static-top mysidebar" role="navigation" style="background-color:#15317C !important;">
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                     <span class="sr-only">Toggle navigation</span>

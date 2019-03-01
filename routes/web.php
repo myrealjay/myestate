@@ -27,10 +27,6 @@ Route::get('broschure',function(){
 Route::get('downloadapp',function(){
     $file= public_path(). "/download/bethel.apk";
 
-    $headers = array(
-              'Content-Type: application/vnd.android.package-archive',
-            );
-
     return response()->file($file ,[
                 'Content-Type'=>'application/vnd.android.package-archive',
                 'Content-Disposition'=> 'attachment; filename="bethel.apk"',
