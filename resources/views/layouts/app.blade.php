@@ -56,7 +56,6 @@
         <!-- Main Header -->
         <header class="main-header mysidebar" style="background-color:#15317C !important;">
 
-            <!-- Logo -->
             <a href="/" class="logo mysidebar" style="background-color:#15317C !important;">
                 <b>Bethel Estate</b>
             </a>
