@@ -31,7 +31,10 @@ Route::get('downloadapp',function(){
               'Content-Type: application/vnd.android.package-archive',
             );
 
-    return response()->download($file, 'bethel.apk', $headers);
+    return response()->file($file ,[
+                'Content-Type'=>'application/vnd.android.package-archive',
+                'Content-Disposition'=> 'attachment; filename="bethel.apk"',
+    ]);
 });
 
 Route::post('sendmail',function(Request $request){
