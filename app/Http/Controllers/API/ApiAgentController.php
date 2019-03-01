@@ -29,6 +29,22 @@ class ApiAgentController extends Controller
         return response()->json(compact(['token','user']));
     }
 
+    public function changepassword(Request $request)
+    {
+        $input=$request->all();
+        $user=\Auth::user();
+        $checker=\Hash::check($input["oldpassword"],$user->password);
+        if($checker){
+            $newpass=\Hash::make($input["newpassword"]);
+            User::where('id',$user->id)->update(['password'=>$newpass]);
+            return response()->json(['success' => 'password reset was successful'], 200);
+        }
+        else{
+            return response()->json(['error' => 'old password entered is wrong'], 200);
+        }
+      
+    }
+
 
     public function getAuthenticatedUser()
 	{

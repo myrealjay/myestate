@@ -12,6 +12,7 @@ use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
 use App\Models\Customer;
 use App\User;
+use Hash;
 
 class CustomerController extends AppBaseController
 {

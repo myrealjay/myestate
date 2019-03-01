@@ -14,6 +14,7 @@ Route::group(['middleware' => ['api','cors']], function () {
     Route::group(['middleware' => 'jwt.auth'], function () {
         Route::post('customer', 'ApiAgentController@store');
         Route::post('customer/{id}', 'ApiAgentController@update');
+        Route::post('changepassword', 'ApiAgentController@changepassword');
         Route::delete('customer/{id}', 'ApiAgentController@destroy');
         Route::get('customer/{id}', 'ApiAgentController@index');
         Route::get('customer/{id}/{custid}', 'ApiAgentController@show');
