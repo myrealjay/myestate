@@ -2041,6 +2041,10 @@ color: #d5d6d7;
 		background-color: #2a404e;
 		box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.664);
 	}
+	.brochure:hover a{
+		color:#fff;
+		text-decoration: none;
+	}
 	.sender{
 		background-color: #fff;
 		padding:5px;
