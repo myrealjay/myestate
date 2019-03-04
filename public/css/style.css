@@ -1670,11 +1670,8 @@ color: #d5d6d7;
 		font-size:14px;
 	}
 	.floter{
-		position:absolute;
-		width:95%;
-		bottom: 10vh;
-		margin:auto;
-		left:0;
+		margin: 50vh auto 10vh;
+		width:100%;
 	}
 	.top-imgs{
 		width:100%;
