@@ -57,7 +57,7 @@
         <header class="main-header mysidebar" style="background-color:#15317C !important;">
 
             <a href="/" class="logo mysidebar" style="background-color:#15317C !important;">
-                <b>Bethel Estate</b>
+                <b style="background-color:black;padding:10px; border-radius:15px;">Bethel Estate</b>
             </a>
 
             <!-- Header Navbar -->
@@ -74,10 +74,15 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
+                                @if(Auth::user()->pic)
                                 <img src="/images/{{Auth::user()->pic}}"
                                      class="user-image" alt="User Image"/>
+                                @else
+                                <img src="/images/user.jpg"
+                                     class="user-image" alt="User Image"/>
+                                @endif
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                <span class="hidden-xs">{!! Auth::user()->firstname !!}</span>
+                                <span style="background-color:black;padding:10px;" class="hidden-xs">{!! Auth::user()->firstname !!}</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
@@ -87,7 +92,7 @@
                                          class="img-circle" alt="User Image"/>
                                 @endif
                                     <p>
-                                        {!! Auth::user()->name !!}
+                                        {!! Auth::user()->firstname !!}
                                         <small>Member since {!! Auth::user()->created_at->format('M. Y') !!}</small>
                                     </p>
                                 </li>

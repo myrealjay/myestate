@@ -9,6 +9,9 @@
             @if(Auth::user()->pic)
                 <img src="/images/{{Auth::user()->pic}}" class="img-circle"
                      alt="User Image"/>
+            @else
+            <img src="/images/user.jpg"
+                class="user-image" alt="User Image"/>
             @endif
             </div>
             <div class="pull-left info">
@@ -18,7 +21,7 @@
                     <p>{{ Auth::user()->firstname}}</p>
                 @endif
                 <!-- Status -->
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+             
             </div>
         </div>
 
@@ -35,7 +38,7 @@
         </form>-->
         <!-- Sidebar Menu -->
 
-        <ul class="sidebar-menu" data-widget="tree" style="background-color:#15317C">
+        <ul class="sidebar-menu" data-widget="tree" style="background-color:#2591AC;">
             @include('layouts.menu')
         </ul>
         <!-- /.sidebar-menu -->
