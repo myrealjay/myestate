@@ -51,7 +51,7 @@ body{
 	
 }
 .header{
-	background: url("../images/texture.jpg") repeat;
+	background: url("../images/texture4.jpg") repeat;
 	/*background: url("../images/banner.jpg") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -64,7 +64,7 @@ body{
 }
 
 .header2{
-	background: url("../images/texture.jpg") repeat;
+	background: url("../images/texture4.jpg") repeat;
 	background-position: center;
 	min-height: 20vh;
 	border-bottom: 3px solid #fff;
