@@ -85,6 +85,7 @@
                                 <span style="background-color:black;padding:10px;" class="hidden-xs">{!! Auth::user()->firstname !!}</span>
                             </a>
                             <ul class="dropdown-menu">
+                            <!---testing -->
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
                                 @if(Auth::user()->pic)
