@@ -434,7 +434,7 @@
 			</div>
 			<div class="footer-bottom">
 
-				<p> Bethel Estate &copy;20{{ date('y') }}  All rights  Reserved | Brought to you by <a href="http://www.okbestate.com.ng"><img width="100" height="width" src="{{ asset('images/okblogo.png') }}"></a> </p>
+				<p> Bethel Estate &copy;20{{ date('y') }}  All rights  Reserved | Brought to you by <a href="http://www.okbestate.com.ng"><img width="100" height="width" class="smalli" src="{{ asset('images/okblogo.png') }}"></a> </p>
 
 			</div>
 			<script type="text/javascript">
