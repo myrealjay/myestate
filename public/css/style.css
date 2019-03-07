@@ -2070,3 +2070,8 @@ color: #d5d6d7;
 		width:100%;
 		overflow:hidden;
 	}
+	.headbg{
+		width:100%;
+		padding-bottom:20px;
+		background-color: rgba(0, 0, 0, 0.9);
+	}

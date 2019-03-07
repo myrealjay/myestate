@@ -54,6 +54,7 @@
 		 	<img width="100%" class="in-imgs" src="{{ asset('images/sm2.jpg') }}">
 		 </div>
 	 </div>
+	 <div class="headbg">
 	 <div class="widthy">
          <div class="header-top">
       		 <div class="logo">
@@ -90,6 +91,7 @@
 		 </script>
 			<div class="clearfix"></div>
 		 </div>  
+	</div>
 	</div>
      <!-- <div class="container"> -->
 
@@ -432,7 +434,7 @@
 			</div>
 			<div class="footer-bottom">
 
-				<p> Bethel Estate &copy;20{{ date('y') }}  All rights  Reserved | Brought to you by <strong>OKB and Associates</strong> </p>
+				<p> Bethel Estate &copy;20{{ date('y') }}  All rights  Reserved | Brought to you by <a href="http://www.okbestate.com.ng"><img width="100" height="width" src="{{ asset('images/okblogo.png') }}"></a> </p>
 
 			</div>
 			<script type="text/javascript">
