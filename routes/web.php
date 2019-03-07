@@ -15,13 +15,13 @@ Route::resource('personaldatas', 'personaldataController');
 Route::post('search', 'personaldataController@search');
 
 Route::get('broschure',function(){
-    $file= public_path(). "/download/gform.pdf";
+    $file= public_path(). "/download/Bethel M12 Lagos.pdf";
 
     $headers = array(
               'Content-Type: application/pdf',
             );
 
-    return Response::download($file, 'filename.pdf', $headers);
+    return Response::download($file, 'Bethel M12 Lagos.pdf', $headers);
 });
 
 Route::get('downloadapp',function(){
