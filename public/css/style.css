@@ -78,7 +78,8 @@ body{
 }
 .logo span{
 	font-size: 28px;
-	color:#ff1111;
+	color:#000000;
+	font-weight: bold;
 	font-family: 'nexa demo', sans-serif;
 }
 .loko{
