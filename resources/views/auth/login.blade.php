@@ -22,6 +22,7 @@
 </head>
 <body>
 <div class="header2" id="head">	
+	<div class="headbg">
       <div class="container"> 
          <div class="header-top">
       		 <div class="logo">
@@ -43,7 +44,7 @@
       </div>
 	 </div>     
     </div>
-  
+</div>
 
 	<div class="footer-section" id="contact" id="contact">
 			<div class="container"> 

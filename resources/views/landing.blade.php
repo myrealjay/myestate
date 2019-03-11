@@ -42,8 +42,15 @@
 </head>
 <body>
 <div class="total">
+	<div class="prelude" id="prelude">
+		<div class="firstInfo" id="firstInfo">
+			<img class="infoImg" id="infoImg" src="{{ asset('images/welcome.png') }}"/>
+			<button class="enterd" id="enterd" onclick="fader()">Click to enter</button>
+		</div>
+	</div>
 <div class="header" id="head">	
-     <div class="carul" id="karul">
+
+     <!--<div class="carul" id="karul">
 		 <div class="animation-slides">
 			 Welcome to bethel estate
 		 </div>
@@ -53,7 +60,9 @@
 		 <div class="animation-slides3">
 		 	<img width="100%" class="in-imgs" src="{{ asset('images/sm2.jpg') }}">
 		 </div>
-	 </div>
+	 </div>-->
+	 <!------ Carul animation suspended ------>	
+
 	 <div class="headbg">
 	 <div class="widthy">
          <div class="header-top">
@@ -147,6 +156,15 @@
 		</div>
 		<script src="js/jquery.wmuSlider.js"></script> 
 		<script>
+			function fader(){
+				D('prelude').style.opacity = 0;
+				setTimeout('D("prelude").style.display = "none"', 2000);
+			}
+			function crone(){
+				D('infoImg').style.opacity = 0;
+				D('enterd').style.opacity = 1;
+			}
+			setTimeout(crone, 3900);
 			$('.example1').wmuSlider();       
 			function D(sun){
 				return document.getElementById(sun);

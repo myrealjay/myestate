@@ -1,6 +1,9 @@
 <?php
 use Illuminate\Http\Request;
 
+/*Route::get('/', function () {
+    return view('load');
+});*/
 Route::get('/', function () {
     return view('landing');
 });
