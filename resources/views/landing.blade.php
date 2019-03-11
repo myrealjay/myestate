@@ -15,6 +15,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="images/favicon.png" type="image/png">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/stylesnew.less" rel="stylesheet" type="text/less" media="all" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
@@ -43,6 +44,9 @@
 <body>
 <div class="total">
 	<div class="prelude" id="prelude">
+		<div class="side-topic">
+		<img class="tsideImg" id="tsideImg" src="{{ asset('images/websiteBethelEstate2.png') }}"/>
+		</div>
 		<div class="firstInfo" id="firstInfo">
 			<img class="infoImg" id="infoImg" src="{{ asset('images/welcome.png') }}"/>
 			<button class="enterd" id="enterd" onclick="fader()">Click to enter</button>
@@ -67,7 +71,7 @@
 	 <div class="widthy">
          <div class="header-top">
       		 <div class="logo">
-                <a href="{{ url('') }}"><img src="images/logo.png" alt=""/></a>
+                <a href="{{ url('') }}"><img src="images/logo.png" class="loko" alt=""/></a><span>Bethel-M12</span>
                 <!--<h2>Bethel</h2>-->
 			 </div>
 		   <div class="top-menu">
@@ -79,11 +83,11 @@
                
 			<ul id="daps">
 			 	<nav class="cl-effect-5">
-				<li style="font-size:14px"><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a></li>
-				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a></li>
-				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a></li>
-				<li><a href="#about" class="scroll"><span data-hover="find us">find us</span></a></li>
-				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a></li>
+				<li style="font-size:14px"><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a> </li>
+				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a> </li>
+				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a> </li>
+				<li><a href="/downloadapp"><span data-hover="find us">Download</span></a> </li>
+				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a> </li>
 				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
 				@if (!Auth::guest())
 					<li><a href="/home" ><span data-hover="dashboard">dashboard</span></a></li>
@@ -107,12 +111,12 @@
 	<div class="index-banner">
 		<div class="niner">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Indicators -->
+				<!-- Indicators --><!--
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
 					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
+				</ol>-->
 
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
@@ -120,7 +124,7 @@
 						<img src="images/cropb.jpg" alt="Bethel Estate" class="top-imgs">
 						<div class="carousel-caption slider-text">
 							<h3>Welcome to Bethel Estate</h3>
-							<p>fore view of the serene environment</p>
+							<p></p>
 						</div>
 					</div>
 
@@ -128,7 +132,7 @@
 						<img src="images/cropb2.jpg" alt="Bethel Estate" class="top-imgs">
 						<div class="carousel-caption slider-text">
 							<h3>A tour of our estate</h3>
-							<p>An aerial Photography</p>
+							<p></p>
 						</div>
 					</div>
 
@@ -136,7 +140,7 @@
 						<img src="images/cropb3.jpg" alt="Bethel Estate" class="top-imgs">
 						<div class="carousel-caption slider-text">
 							<h3>A rare opportunity</h3>
-							<p>marginal view of the serene environment</p>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -149,7 +153,7 @@
 				<a class="right carousel-control" href="#myCarousel" data-slide="next">
 					<span class="glyphicon glyphicon-chevron-right"></span>
 					<span class="sr-only">Next</span>
-				</a>
+				</a><!-- -->
 			</div>
 			
 
@@ -179,7 +183,11 @@
 					turner = true;
 				}
 			}
+			function bgtrans (){
+				D('prelude').style.backgroundImage = "url('../images/websitelayout1.jpg')";
+			}
 			setTimeout("D('karul').style.display = 'none'", 3390);
+			setTimeout("bgtrans()", 3390);
 		</script> 	           	      
 	</div>
 	@if (isset($success))
@@ -190,7 +198,15 @@
 <!--</div> container close-->    
 </div>
 
-
+<div class="n-about">
+	<div class="container">
+		<h1>About Bethel-M12</h1>
+		<p>Bethel housing estate will comprise of block of 6 and block of 4 terrace duplexes with every unit built to world-class standards and will offer a convenient and comfortable living experience.
+		Bethel housing estate will comprise of block of 6 and block of 4 terrace duplexes with every unit built to world-class standards and will offer a convenient and comfortable living experience.
+		Bethel housing estate will comprise of block of 6 and block of 4 terrace duplexes with every unit built to world-class standards and will offer a convenient and comfortable living experience.
+		</p>
+	</div>
+</div><!--
 <div class ="row conga">
 	<div class="col-md-6 few-wordshh">
 		<div class="floter">
@@ -210,24 +226,115 @@
 				<img width="100%" class="smalli" src="{{ asset('images/multi-image.jpg') }}">
 			</div>
 		</div>
-	</div><!---->
+	</div>-->
 	<div class="second-in">
-		<div class="col-md-6 fewer-words">
-			<div class="logo-cen">
-				<img width="100%" src="{{ asset('images/logo2.png') }}">
+		<div class="fisher">
+
+			<!-- start-->
+			<div class="container">
+				<h1></h1>
+				<div class="row">
+					<div class="col-md-12">
+					<div class="carousel slide multi-item-carousel" id="theCarousel">
+						<div class="carousel-inner">
+						<div class="item active">
+							<div class="col-xs-4"><a href="#1"><img src="images/slide1.jpg" class="img-responsive"></a></div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4"><a href="#1"><img src="images/slide2.jpg" class="img-responsive"></a></div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4"><a href="#1"><img src="images/slide3.jpg" class="img-responsive"></a></div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4"><a href="#1"><img src="images/slide4.jpg" class="img-responsive"></a></div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4"><a href="#1"><img src="images/slide5.jpg" class="img-responsive"></a></div>
+						</div>
+						<div class="item">
+							<div class="col-xs-4"><a href="#1"><img src="images/slide6.jpg" class="img-responsive"></a></div>
+						</div>
+						<!-- add  more items here -->
+						<!-- Example item start:  -->
+						
+						<div class="item">
+							<div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+						</div>
+						
+						<!--  Example item end -->
+						</div>
+						<a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+						<a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+					</div>
+					</div>
+				</div>
 			</div>
-			<h1>Bethel Estate</h1>
-			<!--<p>Content</p><br>-->
-			<h1>Surrounded with serene environment for family living</h1>
+			<script>
+				$('.multi-item-carousel').carousel({
+				interval: false
+				});
+
+				// for every slide in carousel, copy the next slide's item in the slide.
+				// Do the same for the next, next item.
+				$('.multi-item-carousel .item').each(function(){
+				var next = $(this).next();
+				if (!next.length) {
+					next = $(this).siblings(':first');
+				}
+				next.children(':first-child').clone().appendTo($(this));
+				
+				if (next.next().length>0) {
+					next.next().children(':first-child').clone().appendTo($(this));
+				} else {
+					$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+				}
+				});
+			</script>
+			<!--end-->
 		</div>
-		<div class="col-md-6">
-			<div class="spacer"></div>
-			<div class="bottom-plan">
-				<img width="100%" class="bigi" src="{{ asset('images/site-plan-bare1.png') }}">
+		<div class="fisher2">
+
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators --><!--
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>-->
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active row">
+							<img src="images/slide1.jpg" alt="Bethel Estate" class="sl-imgs">
+					</div>
+
+					<div class="item">
+						<img src="images/slide2.jpg" alt="Bethel Estate" class="sl-imgs">
+						<div class="carousel-caption slider-text">
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="images/slide3.jpg" alt="Bethel Estate" class="ls-imgs">
+						<div class="carousel-caption slider-text">
+						</div>
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a><!-- -->
 			</div>
 		</div>
 	</div>
-	<div class="content">
+	<div class="content dark">
 		<div class="services-section" id="services">
 			<div class="container"> 
 				<div class="services-header">
@@ -238,34 +345,44 @@
 					</div>
 					<div class="services-sectiongrids">
 						<div class="col-md-4 services-grid">
-							<img src="images/football.jpg" alt="" class="utility-image smalli"/>
-							<h4>Football Field</h4>
-							<p>Quickly relieve the day to day stress with a serene burnout field that is easily accessible.</p>
+							<img src="images/fac1.png" alt="" class="utility-image smalli"/>
+							<h4>Playground</h4>
+							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/tennis.jpg" alt="" class="utility-image smalli"/>
-							<h4>Tennis Court</h4>
-							<p>A life time sport for the children, teenager, aged, men, women in short, this tennis is a game for all.</p>
+							<img src="images/fac3.png" alt="" class="utility-image smalli"/>
+							<h4>24/7 Security</h4>
+							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/sewage.jpg" alt="" class="utility-image smalli"/>
-							<h4>Central Sewage system</h4>
-							<p>Our central sewage system serves as a preservation to the natural environment and protect public health.</p>
+							<img src="images/fac2.png" alt="" class="utility-image smalli"/>
+							<h4>Maid's B/Q Homes</h4>
+							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/power.jpg" alt="" class="utility-image smalli"/>
-							<h4>Electricity Supply</h4>
-							<p>Our electricity supply is constant and always available 24/7, its 100% available and reliable.</p>
+							<img src="images/fac4.png" alt="" class="utility-image smalli"/>
+							<h4>Good Road Network</h4>
+							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/water.jpg" alt="" class="utility-image smalli"/>
-							<h4>Treated Water Supply</h4>
-							<p>Our water tratement plant remains second to none, we can guarantee you the purest as your healt is our priority.</p>
+							<img src="images/fac5.png" alt="" class="utility-image smalli"/>
+							<h4>Ample Parking Space</h4>
+							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/road.jpg" alt="" class="utility-image smalli"/>
-							<h4>Good Roads and Drainage</h4>
-							<p>The drainage system ensure there is no water lodging during rainy season while good roads add to the proximity of your moverment.</p>
+							<img src="images/fac6.png" alt="" class="utility-image smalli"/>
+							<h4>Resort style luxury</h4>
+							<p></p>
+						</div>
+						<div class="col-md-4 services-grid">
+							<img src="images/fac7.png" alt="" class="utility-image smalli"/>
+							<h4>Commercial Centers</h4>
+							<p></p>
+						</div>
+						<div class="col-md-4 services-grid">
+							<img src="images/fac8.png" alt="" class="utility-image smalli"/>
+							<h4>Spectacular manicured garden</h4>
+							<p></p>
 						</div>
 					</div>
 				</div><!---->
