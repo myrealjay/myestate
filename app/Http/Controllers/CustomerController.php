@@ -30,6 +30,7 @@ class CustomerController extends AppBaseController
      * @param Request $request
      * @return Response
      */
+//my work
     public function index(Request $request)
     {
         $this->customerRepository->pushCriteria(new RequestCriteria($request));

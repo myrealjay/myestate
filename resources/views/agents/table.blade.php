@@ -1,5 +1,5 @@
 <table class="table table-responsive" id="agents-table">
-    <thead style="background-color:#2A44A9;color:white;">
+    <thead style="background-color:#5499C7;color:white;">
         <tr>
             <th>Fullname</th>
         <th>Sex</th>
@@ -9,7 +9,7 @@
             <th colspan="3">Action</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody style="background-color:#E2E9ED;">
     @foreach($agents as $agent)
         <tr>
             <td>{!! $agent->fullname !!}</td>
