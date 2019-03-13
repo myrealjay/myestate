@@ -50,7 +50,7 @@
 	<div style="background-color:rgba(0,0,0,0.5); padding-top:50px;" >
 			<div class="container"> 
 			<div class="contact-header">
-				<h3><span>[</span> Purchase <span>]</span></h3>
+				<h3><span>Purchase</span></h3>
 					<p>Fill this form to register and complete the purchasing process</p>
 			</div>
 			

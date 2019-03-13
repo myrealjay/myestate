@@ -53,7 +53,7 @@
 <div style="background-color:rgba(0,0,0,0.5); padding-top:50px;"  >
 			<div class="container" > 
 			<div class="contact-header" >
-				<h3><span>[</span> Login <span>]</span></h3>
+				<h3><span> Login </span></h3>
 					<p>login to complete the purchasing process</p>
 			</div>
 			
