@@ -27,7 +27,7 @@
       <div class="container"> 
          <div class="header-top">
       		 <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                <a href="{{ url('') }}"><img src="images/logo.png" alt=""/></a>
                 <!--<h2>Bethel</h2>-->
 			 </div>
 		   <div class="top-menu">

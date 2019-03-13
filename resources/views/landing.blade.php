@@ -44,7 +44,7 @@
 	<!------ Eng Light Box ------>	
 
 </head>
-<body>
+<body onscroll="closeModals()">
 <div class="total">
 	<div class="prelude" id="prelude">
 		<div class="side-topic">
@@ -342,49 +342,50 @@
 					</div>
 					<div class="services-sectiongrids">
 						<div class="col-md-4 services-grid">
-							<img src="images/fac1.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<img src="images/fac1.png" alt="" class="utility-image smallis" data-aos="zoom-in-left" onclick="mode('fix1')"/>
 							<h4 data-aos="zoom-in-left">Playground</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac3.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<img src="images/fac3.png" alt="" class="utility-image smallis" data-aos="zoom-in-left" onclick="mode('fix2')"/>
 							<h4 data-aos="zoom-in-left">24/7 Security</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac2.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<img src="images/fac2.png" alt="" class="utility-image smallis" data-aos="zoom-in-left" onclick="mode('fix3')"/>
 							<h4 data-aos="zoom-in-left">Maid's B/Q Homes</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac4.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<img src="images/fac4.png" alt="" class="utility-image smallis" data-aos="zoom-in-left" onclick="mode('fix4')"/>
 							<h4 data-aos="zoom-in-left">Good Road Network</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac5.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<img src="images/fac5.png" alt="" class="utility-image smallis" data-aos="zoom-in-left" onclick="mode('fix5')"/>
 							<h4 data-aos="zoom-in-left">Ample Parking Space</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac6.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<img src="images/fac6.png" alt="" class="utility-image smallis" data-aos="zoom-in-left" onclick="mode('fix6')"/>
 							<h4 data-aos="zoom-in-left">Resort style luxury</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac7.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<img src="images/fac7.png" alt="" class="utility-image smallis" data-aos="zoom-in-left" onclick="mode('fix7')"/>
 							<h4 data-aos="zoom-in-left">Commercial Centers</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac8.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<img src="images/fac8.png" alt="" class="utility-image smallis" data-aos="zoom-in-left" onclick="mode('fix8')"/>
 							<h4 data-aos="zoom-in-left">Spectacular manicured garden</h4>
 							<p></p>
 						</div>
 					</div>
-				</div><!---->
+				</div><!--buruji-->
 			</div>
 		</div>
+
 		
 		<div class="works-section" id="work">
 			<div class="works-header">
@@ -483,6 +484,7 @@
 				D('shif').innerHTML = 'See less';
 			}
 		}
+		
 	</script>
 	 <div class="partner">
 		 <div class="bg-guy"></div>
@@ -640,6 +642,94 @@
 				});
 
 			</script>
+			
+		<!---Modal ---buruji--->
+		<div class="modeBlack" id="fix1">
+			<div class="shelly" onclick="closemodal('fix1')"></div>
+			<div class="modeShell">
+			<img class="modImg" width="100%" height="width" src="images/playground.jpg" alt=""/>
+			</div>
+		</div>
+		<!---end modal----->
+		<!---Modal ---buruji--->
+		<div class="modeBlack" id="fix2">
+			<div class="shelly" onclick="closemodal('fix2')"></div>
+			<div class="modeShell">
+			<img class="modImg" width="100%" height="width" src="images/security.jpg" alt=""/>
+			</div>
+		</div>
+		<!---end modal----->
+		<!---Modal ---buruji--->
+		<div class="modeBlack" id="fix3">
+			<div class="shelly" onclick="closemodal('fix3')"></div>
+			<div class="modeShell">
+			<img class="modImg" width="100%" height="width" src="images/bq.jpg" alt=""/>
+			</div>
+		</div>
+		<!---end modal----->
+		<!---Modal ---buruji--->
+		<div class="modeBlack" id="fix4">
+			<div class="shelly" onclick="closemodal('fix4')"></div>
+			<div class="modeShell">
+			<img class="modImg" width="100%" height="width" src="images/road.jpg" alt=""/>
+			</div>
+		</div>
+		<!---end modal----->
+		<!---Modal ---buruji--->
+		<div class="modeBlack" id="fix5">
+			<div class="shelly" onclick="closemodal('fix5')"></div>
+			<div class="modeShell">
+			<img class="modImg" width="100%" height="width" src="images/park.jpg" alt=""/>
+			</div>
+		</div>
+		<!---end modal----->
+		<!---Modal ---buruji--->
+		<div class="modeBlack" id="fix6">
+			<div class="shelly" onclick="closemodal('fix6')"></div>
+			<div class="modeShell">
+			<img class="modImg" width="100%" height="width" src="images/bq.jpg" alt=""/>
+			</div>
+		</div>
+		<!---end modal----->
+		<!---Modal ---buruji--->
+		<div class="modeBlack" id="fix7">
+			<div class="shelly" onclick="closemodal('fix7')"></div>
+			<div class="modeShell">
+			<img class="modImg" width="100%" height="width" src="images/resort.jpg" alt=""/>
+			</div>
+		</div>
+		<!---end modal----->
+		<!---Modal ---buruji--->
+		<div class="modeBlack" id="fix8">
+			<div class="shelly" onclick="closemodal('fix8')"></div>
+			<div class="modeShell">
+			<img class="modImg" width="100%" height="width" src="images/garden.jpg" alt=""/>
+			</div>
+		</div>
+		<!---end modal----->
+		<script>
+			function mode(arg){
+				D(arg).style.display = 'block';/*
+				D(arg).style.opacity = '0.5';
+				setTimeout('D(arg).style.opacity = 1;', 400)*/
+			}
+			function closemodal(arg){
+				D(arg).style.display = 'none';
+			}
+			var chain = document.getElementsByClassName('modeBlack');
+			var i = 0;
+			console.log(chain)
+
+			function closeModals(){
+				/*for (i == 0; i < chain.length; i++){
+					chain[i].style.display = 'none';
+				}*/
+				chain.forEach(ret);
+				function ret(arg){
+					return arg.style.display = 'none';
+				}
+			}
+		</script>
 
 		</div>
 		</body>

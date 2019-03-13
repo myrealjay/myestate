@@ -284,7 +284,7 @@ ul.wmuSliderPagination {
 .works-section{
 	padding:3em 0;
 	min-height: 100vh;
-		background: url("../images/wall.jpg") repeat;
+	background: url("../images/wall.jpg") repeat;
 }
 .works-header{
 	text-align: center;
@@ -1863,6 +1863,41 @@ color: #d5d6d7;
 	.bod{
 		border-bottom: 2px solid #aaa;
 	}
+	/*Modal section*/
+	.modeBlack{
+		position:fixed;
+		width:100;
+		height:100;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		padding:10vh 0 0 0;
+		display:none;
+		background-color: rgba(0, 0, 0, 0.6);
+		transition:0.4s;
+	}
+	.shelly{
+		position:absolute;
+		width:100;
+		height:100;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	.modeShell{
+		position:relative;
+		width:70%;
+		max-width: 600px;
+		margin:auto;
+		height:20vh;
+	}
+	.modImg{
+		border-radius: 0 10px 0 10px;
+	}
+	/*Modal section*/
 	.full-site1{
 		width:90%;
 		max-width: 1000px;
@@ -1899,6 +1934,8 @@ color: #d5d6d7;
 	.curvy{
 		border-radius:6px;
 		box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.8);
+		position:relative;
+		z-index: 5;
 	}
 	.change:hover {
 		transform: translate(0, -15px);
