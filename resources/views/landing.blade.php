@@ -478,19 +478,19 @@
 			if(switcher == true){
 				D('crops').style.height = 0;
 				switcher = false;
-				D('shif').innerHTML = 'See less';
+				D('shif').innerHTML = 'Learn More';
 			} else {
 				D('crops').style.height = '';
 				switcher = true;
-				D('shif').innerHTML = 'Learn More';
+				D('shif').innerHTML = 'See less';
 			}
 		}
 	</script>
 	 <div class="partner">
 		 <div class="bg-guy"></div>
 		 <!--<h2>Our Pertner</h2>-->
-		 <div class="pat-img" data-aos="fade-up">
-			 <img width="100%" height="width" alt="Wema Bank Plc" src="images/wema-bank.jpg" />
+		 <div class="pat-img smalli" data-aos="fade-up">
+			 <a href="https://www.wemabank.com/"><img width="100%" height="width" alt="Wema Bank Plc" src="images/wema-bank.jpg" /></a>
 		 </div>
 	 </div>
 	<!--<div class="about-section" id="about" id="about">
@@ -570,7 +570,7 @@
         	<div class="row footee"> 
         		<div class="col-md-3 footer-in">
         			<a href="#"><img width="130" height="width" src="images/about-logo.png" /></a><br><br>
-        			<p>Bethel estate remains second to none, click the <b>BUY NOW</b> button below to place an order for any of the teraces. </p>
+        			<p>Bethel estate is a contempory and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way.</p>
 				</div>
 				<div class="col-md-3"></div>
         		
