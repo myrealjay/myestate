@@ -389,7 +389,7 @@
 			<div class="works-header">
 				<div data-aos="flip-left">
 					<h3> Floor Plans </h3>
-					<p>Information about the building floors</p>
+					<p>Information about the building Interior</p>
 				</div>
 				<div class="row">
 					<div class="col-md-4" data-aos="fade-right">
