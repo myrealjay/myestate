@@ -14,6 +14,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="icon" href="images/favicon.png" type="image/png">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/animation-aos.css" type="text/css" />
+	<!--Trial-->
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/stylesnew.less" rel="stylesheet" type="text/less" media="all" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -48,8 +51,13 @@
 		<img class="tsideImg" id="tsideImg" src="{{ asset('images/websiteBethelEstate2.png') }}"/>
 		</div>
 		<div class="firstInfo" id="firstInfo">
-			<img class="infoImg" id="infoImg" src="{{ asset('images/welcome.png') }}"/>
-			<button class="enterd" id="enterd" onclick="fader()">Click to enter</button>
+			<!--<img class="infoImg" id="infoImg" src="{{ asset('images/welcome.png') }}"/>-->
+			<div class="enterd" onclick="fader()">
+				<div class="imgholder">
+					<img width="100%" height="100%" src="{{ asset('images/welcome.png') }}"/>
+				</div>
+				<p id="enterd">Click to enter</p>
+			</div>
 		</div>
 	</div>
 <div class="header" id="head">	
@@ -71,7 +79,7 @@
 	 <div class="widthy">
          <div class="header-top">
       		 <div class="logo">
-                <a href="{{ url('') }}"><img src="images/logo.png" class="loko" alt=""/></a><span>Bethel-M12</span>
+                <a href="{{ url('') }}"><img src="images/logo.png" Width="100%" alt="Bethel-M12"/></a>
                 <!--<h2>Bethel</h2>-->
 			 </div>
 		   <div class="top-menu">
@@ -86,7 +94,7 @@
 				<li style="font-size:14px"><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a> </li>
 				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a> </li>
 				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a> </li>
-				<li><a href="/downloadapp"><span data-hover="find us">Download</span></a> </li>
+				<li><a href="/downloadapp"><span data-hover="find us">Find us</span></a> </li>
 				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a> </li>
 				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
 				@if (!Auth::guest())
@@ -122,30 +130,18 @@
 				<div class="carousel-inner">
 					<div class="item active">
 						<img src="images/cropb.jpg" alt="Bethel Estate" class="top-imgs">
-						<div class="carousel-caption slider-text">
-							<h3>Welcome to Bethel Estate</h3>
-							<p></p>
-						</div>
 					</div>
 
 					<div class="item">
 						<img src="images/cropb2.jpg" alt="Bethel Estate" class="top-imgs">
-						<div class="carousel-caption slider-text">
-							<h3>A tour of our estate</h3>
-							<p></p>
-						</div>
 					</div>
 
 					<div class="item">
 						<img src="images/cropb3.jpg" alt="Bethel Estate" class="top-imgs">
-						<div class="carousel-caption slider-text">
-							<h3>A rare opportunity</h3>
-							<p></p>
-						</div>
 					</div>
 				</div>
 
-				<!-- Left and right controls -->
+				<!-- Left and right controls --><!--
 				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 					<span class="glyphicon glyphicon-chevron-left"></span>
 					<span class="sr-only">Previous</span>
@@ -199,7 +195,7 @@
 </div>
 
 <div class="n-about">
-	<div class="container">
+	<div class="container" data-aos="flip-left">
 		<h1>About Bethel-M12</h1>
 		<p>Bethel housing estate will comprise of block of 6 and block of 4 terrace duplexes with every unit built to world-class standards and will offer a convenient and comfortable living experience.
 		Bethel housing estate will comprise of block of 6 and block of 4 terrace duplexes with every unit built to world-class standards and will offer a convenient and comfortable living experience.
@@ -231,7 +227,7 @@
 		<div class="fisher">
 
 			<!-- start-->
-			<div class="container">
+			<div class="container" data-aos="fade-up">
 				<h1></h1>
 				<div class="row">
 					<div class="col-md-12">
@@ -257,11 +253,11 @@
 						</div>
 						<!-- add  more items here -->
 						<!-- Example item start:  -->
-						
+						<!--
 						<div class="item">
 							<div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
 						</div>
-						
+						-->
 						<!--  Example item end -->
 						</div>
 						<a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
@@ -295,7 +291,7 @@
 		</div>
 		<div class="fisher2">
 
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-aos="fade-up">
 				<!-- Indicators --><!--
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -306,7 +302,7 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active row">
-							<img src="images/slide1.jpg" alt="Bethel Estate" class="sl-imgs">
+							<img src="images/slide1.jpg" alt="Bethel Estate" class="sl-imgs feature fea-slider" data-aos="fade-right">
 					</div>
 
 					<div class="item">
@@ -340,48 +336,48 @@
 				<div class="services-header">
 
 
-					<h3><span>[</span> Facilities <span>]</span></h3>
+					<h3>Facilities</h3>
 					<p>Bethel estate is a contempory and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way. The estate is in close proximity to several commercial centres such as banks, filling stations, grocery stores, supermarkets, pharmacies, gas plant and less than an hour drive to Lagos Island. </p>
 					</div>
 					<div class="services-sectiongrids">
 						<div class="col-md-4 services-grid">
-							<img src="images/fac1.png" alt="" class="utility-image smalli"/>
-							<h4>Playground</h4>
+							<img src="images/fac1.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<h4 data-aos="zoom-in-left">Playground</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac3.png" alt="" class="utility-image smalli"/>
-							<h4>24/7 Security</h4>
+							<img src="images/fac3.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<h4 data-aos="zoom-in-left">24/7 Security</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac2.png" alt="" class="utility-image smalli"/>
-							<h4>Maid's B/Q Homes</h4>
+							<img src="images/fac2.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<h4 data-aos="zoom-in-left">Maid's B/Q Homes</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac4.png" alt="" class="utility-image smalli"/>
-							<h4>Good Road Network</h4>
+							<img src="images/fac4.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<h4 data-aos="zoom-in-left">Good Road Network</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac5.png" alt="" class="utility-image smalli"/>
-							<h4>Ample Parking Space</h4>
+							<img src="images/fac5.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<h4 data-aos="zoom-in-left">Ample Parking Space</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac6.png" alt="" class="utility-image smalli"/>
-							<h4>Resort style luxury</h4>
+							<img src="images/fac6.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<h4 data-aos="zoom-in-left">Resort style luxury</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac7.png" alt="" class="utility-image smalli"/>
-							<h4>Commercial Centers</h4>
+							<img src="images/fac7.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<h4 data-aos="zoom-in-left">Commercial Centers</h4>
 							<p></p>
 						</div>
 						<div class="col-md-4 services-grid">
-							<img src="images/fac8.png" alt="" class="utility-image smalli"/>
-							<h4>Spectacular manicured garden</h4>
+							<img src="images/fac8.png" alt="" class="utility-image smallis" data-aos="zoom-in-left"/>
+							<h4 data-aos="zoom-in-left">Spectacular manicured garden</h4>
 							<p></p>
 						</div>
 					</div>
@@ -389,41 +385,26 @@
 			</div>
 		</div>
 		
-		<div class="third-in">
-			<h2>Here are some more reasons why you would just love Bethel estate</h2><br>
-			<h1>. Proximity to Ikeja City Mall</h1><br>
-			<h1>. Directly off Ikorodu dual carriage road</h1><br>
-			<h1>. Less than an hour drive to Lagos Island</h1>
-			<h1>. Proximity to Maryland Mall</h1>
-			<h1>. Serene Environment</h1>
-			<h1>. Children Frendly </h1>
-			<h1>. Paved Roads</h1>
-			<h1>. Recreational Areas</h1>
-		</div>
 		<div class="works-section" id="work">
 			<div class="works-header">
-				<h3><span>[</span> Site Plan <span>]</span></h3>
-				<div class="full-site1">
-					<img width="100%" src="{{ asset('images/full-site-plan.png') }}">
+				<div data-aos="flip-left">
+					<h3> Floor Plans </h3>
+					<p>Information about the building floors</p>
 				</div>
-				<hr class="divider" />
-				<h3><span>[</span> Floor Plans <span>]</span></h3>
-				<p>OKB and Associates floor plan information awaiting, please finalize and give us the apropriate info to fill in as soon as possible </p>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-4" data-aos="fade-right">
 						<div class="full-site change">
-							<img width="100%" class="crv" src="{{ asset('images/terrace.jpg') }}">
-						</div>
-						<div class="full-site change">
-							<img width="100%" src="{{ asset('images/ground-floor-plan.png') }}">
+							<img width="100%" src="{{ asset('images/bgroundfloor.jpg') }}" class="curvy">
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-4" data-aos="fade-up">
 						<div class="full-site change">
-							<img width="100%" src="{{ asset('images/first-floor-1.png') }}">
+							<img width="100%" src="{{ asset('images/bfirstfloor.jpg') }}" class="curvy">
 						</div>
+					</div>
+					<div class="col-md-4" data-aos="fade-left">
 						<div class="full-site change">
-							<img width="100%" src="{{ asset('images/pent-floor-plan.png') }}">
+							<img width="100%" src="{{ asset('images/bpentfloor.jpg') }}" class="curvy">
 						</div>
 					</div>
 				</div>
@@ -432,7 +413,7 @@
 				<a href="#about" class="scroll"><img src="images/arrow.png" alt=""/></a>
 			</div>
 		</div>
-		<!--Streetview-->
+		<!--Streetview--><!--
 		<div class ="row conga bod">
 			<div class="col-md-8 street-view">
 
@@ -467,15 +448,55 @@
 				<a href="#about" class="scroll"><img src="images/arrow.png" alt=""/></a>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<!-- portfolio-section-ends -->
-	<div class="about-section" id="about" id="about">
+	<div class="video-sect">
+		<div class="holder" data-aos="zoom-in-left">
+			<div class="vid">
+				<iframe class="interior" src="https://www.youtube.com/embed/NqP1i5xHOnY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="offer-sect">
+		<div class="offer-control">
+			<p>Refer and earn 1,000,000 Naira</p>
+			<div class="butti">
+				<button class="buttin" id="shif" onclick="collapser()" data-aos="fade-up">Learn More</button>
+			</div>
+		</div>
+		<div class="offer-info">
+			<div class="crop-info" id="crops">
+				Buy one Unit for 20million naira <br>
+				Buy two units for 40million naira and get one free
+			</div>
+		</div>
+	</div>
+	<script>
+		D('crops').style.height = 0;
+		var switcher = false;
+		function collapser(){
+			if(switcher == true){
+				D('crops').style.height = 0;
+				switcher = false;
+				D('shif').innerHTML = 'See less';
+			} else {
+				D('crops').style.height = '';
+				switcher = true;
+				D('shif').innerHTML = 'Learn More';
+			}
+		}
+	</script>
+	 <div class="partner">
+		 <div class="bg-guy"></div>
+		 <!--<h2>Our Pertner</h2>-->
+		 <div class="pat-img" data-aos="fade-up">
+			 <img width="100%" height="width" alt="Wema Bank Plc" src="images/wema-bank.jpg" />
+		 </div>
+	 </div>
+	<!--<div class="about-section" id="about" id="about">
 		<div class="container">
 			<div class="about-header">
-				<h3><span>[</span> Find Us <span>]</span></h3>
-				<p><i class="fa fa-map-marker"></i> 30, Lanre Awolokun Street, Gbagade, Lagos. </p> 
-				<p><i class="fa fa-phone"></i> 234 806 941 6226 </p> 
-				<p><i class="fa fa-envelope"></i> contact@bethelestate.com.ng </p> 
+				<h3>Find Us</h3>
 			</div>
 			<div class="about-sectiongrids">
 				<div class="col-md-6 about-leftgrid">
@@ -540,36 +561,41 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div>-->
 
         <!--
         -->
 
-        <div class="footer-section" id="contact" id="contact">
-        	<div class="container"> 
-        		<div class="contact-header">
-        			<h3><span>[</span> Purchase <span>]</span></h3>
+        <div class="footer-section" id="contact">
+        	<div class="row footee"> 
+        		<div class="col-md-3 footer-in">
+        			<a href="#"><img width="130" height="width" src="images/about-logo.png" /></a><br><br>
         			<p>Bethel estate remains second to none, click the <b>BUY NOW</b> button below to place an order for any of the teraces. </p>
-        		</div>
-        		<div class="social-icon">
-        			<a href="#"><i class="icon1"></i></a>
-        			<a href="#"><i class="icon2"></i></a>
-        			<!--<a href="#"><i class="icon3"></i></a>-->
-        			<a href="#"><i class="icon4"></i></a>
-				<!--<a href="#"><i class="icon5"></i></a>
-				<a href="#"><i class="icon6"></i></a>
-				<a href="#"><i class="icon7"></i></a>
-				<a href="#"><i class="icon8"></i></a>-->
-			</div>
-			<div class="contact">
-				<div class="contactgrid3">
-					<a href="{{ route('register') }}"><button type="button" class="buyer">Buy now</button></a>
 				</div>
-				<div class="clearfix"></div>
+				<div class="col-md-3"></div>
+        		
+			<div class="col-md-3 footer-in">
+				<h3> Quick links </h3>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="#facilities" class="scroll"> Facilities </a></p>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="/broschure"> Download Brochure </a></p>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="/downloadapp"> Download Agent App </a></p>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="#"> shbihsfbhfbksvhbkh </a></p>
+			</div>
+			<div class="col-md-3 footer-in">
+        			<h3> Find us </h3>
+        			<p>30, Lanre Awolokun Street, Gbagada, Lagos.</p>
+        			<p>+234 806 941 6226</p>
+					<p>contact@bethelestate.com.ng</p>
+					<div class="social-icon">
+						<a href="#"><i class="icon1"></i></a>
+						<a href="#"><i class="icon2"></i></a>	
+					</div>
+				</div>
+			<div class="clearfix"></div>
 			</div>
 			<div class="footer-bottom">
 
-				<p> Bethel Estate &copy;20{{ date('y') }}  All rights  Reserved | Brought to you by <a href="http://www.okbestate.com.ng"><img width="100" height="width" class="smalli" src="{{ asset('images/okblogo.png') }}"></a> </p>
+				<p> Bethel Estate &copy;20{{ date('y') }}  All rights Reserved | Brought to you by <a href="http://www.okbestate.com.ng"><img width="50" height="width" class="smalli" src="{{ asset('images/okblogo.png') }}"></a> </p>
 
 			</div>
 			<script type="text/javascript">
@@ -604,10 +630,17 @@
 							 }
 					 </script>
 					 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-					</div>
 
 				</div>		
 			</div>
+			<script src='js/aos.js'></script>
+			<script>
+				AOS.init({
+					easing: 'ease-out-back',
+					duration: 1000
+				});
+
+			</script>
 
 		</div>
 		</body>
