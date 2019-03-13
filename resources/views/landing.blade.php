@@ -94,12 +94,12 @@
 				<li style="font-size:14px"><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a> </li>
 				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a> </li>
 				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a> </li>
-				<li><a href="/downloadapp"><span data-hover="find us">Find us</span></a> </li>
+				<li><a href="#video"><span data-hover="Walk-through">Walk-through</span></a> </li><!--
 				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a> </li>
 				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
 				@if (!Auth::guest())
 					<li><a href="/home" ><span data-hover="dashboard">dashboard</span></a></li>
-				@endif
+				@endif-->
 				</nav>
 			 </ul>
 			 </div>
@@ -450,7 +450,7 @@
 		</div>
 	</div>-->
 	<!-- portfolio-section-ends -->
-	<div class="video-sect">
+	<div class="video-sect" id="video">
 		<div class="holder" data-aos="zoom-in-left">
 			<div class="vid">
 				<iframe class="interior" src="https://www.youtube.com/embed/NqP1i5xHOnY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
