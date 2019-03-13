@@ -19,6 +19,7 @@
     <script src="js/jquery.swipebox.min.js"></script> 
     <!------ Eng Light Box ------>	
 
+
 </head>
 <body>
 <div class="header2" id="head">	
@@ -46,9 +47,12 @@
     </div>
 </div>
 
-	<div class="footer-section" id="contact" id="contact">
-			<div class="container"> 
-			<div class="contact-header">
+<!--login section-->
+<div style="background-color:#296791; ">
+
+<div style="background-color:rgba(0,0,0,0.5); padding-top:50px;"  >
+			<div class="container" > 
+			<div class="contact-header" >
 				<h3><span>[</span> Login <span>]</span></h3>
 					<p>login to complete the purchasing process</p>
 			</div>
@@ -98,17 +102,21 @@
 				
 			</div>
         </form>
-				<div class="footer-bottom">
+				
+
+		</div>		
+	</div>
+	<div class="footer-bottom">
 
 					<p> Bethel Estate &copy;20{{ date('y') }}  All rights  Reserved | Brought to you by <strong>OKB and Associates</strong> </p>
 
 					</div>
 					
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
 </div>
+<!--login section ends!-->
 
-		</div>		
-	</div>
 	
 	
 </body>
