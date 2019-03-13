@@ -57,7 +57,7 @@
         <header class="main-header mysidebar" >
 
             <a href="/" class="logo mysidebar">
-                <b style="background-color:black;padding:10px; border-radius:15px;">Bethel Estate</b>
+                <b >Bethel Estate</b>
             </a>
 
             <!-- Header Navbar -->
@@ -82,7 +82,7 @@
                                      class="user-image" alt="User Image"/>
                                 @endif
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                <span style="background-color:black;padding:10px;" class="hidden-xs">{!! Auth::user()->firstname !!}</span>
+                                <span  class="hidden-xs">{!! Auth::user()->firstname !!}</span>
                             </a>
                             <ul class="dropdown-menu">
                             <!---testing -->
