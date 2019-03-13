@@ -90,16 +90,17 @@
                <span class="menu fas"  onclick="opener()">. </span>
                
 			<ul id="daps">
-			 	<nav class="cl-effect-5">
-				<li style="font-size:14px"><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a> </li>
+			 	<nav class="cl-effect-5"><!--
+				<li style="font-size:14px"><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a> </li>-->
 				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a> </li>
 				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a> </li>
-				<li><a href="#video" class="scroll"><span data-hover="Walk-through">Walk-through</span></a> </li><!--
-				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a> </li>
-				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
+				<li><a href="#video" class="scroll"><span data-hover="Walk-through">Walk-through</span></a> </li>
 				@if (!Auth::guest())
 					<li><a href="/home" ><span data-hover="dashboard">dashboard</span></a></li>
-				@endif-->
+				@else
+					<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a> </li>
+					<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
+				@endif
 				</nav>
 			 </ul>
 			 </div>
@@ -569,7 +570,7 @@
         <div class="footer-section" id="contact">
         	<div class="row footee"> 
         		<div class="col-md-3 footer-in">
-        			<a href="#"><img width="130" height="width" src="images/about-logo.png" /></a><br><br>
+        			<a href="#home" class="scroll"><img width="130" height="width" src="images/about-logo.png" /></a><br><br>
         			<p>Bethel estate is a contempory and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way.</p>
 				</div>
 				<div class="col-md-3"></div>
