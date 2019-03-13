@@ -46,20 +46,14 @@
     </div>
 </div>
   
-
-	<div class="footer-section" id="contact" id="contact">
+<div style="background-color:#296791; ">
+	<div style="background-color:rgba(0,0,0,0.5); padding-top:50px;" >
 			<div class="container"> 
 			<div class="contact-header">
 				<h3><span>[</span> Purchase <span>]</span></h3>
 					<p>Fill this form to register and complete the purchasing process</p>
 			</div>
-			<div class="social-icon">
-				<a href="#"><i class="icon1"></i></a>
-				<a href="#"><i class="icon2"></i></a>
-				<!--<a href="#"><i class="icon3"></i></a>-->
-				<a href="#"><i class="icon4"></i></a>
-				
-			</div>
+			
 			<div class="contact">
             <form method="post" action="{{ url('/register') }}">
 
@@ -181,17 +175,90 @@
 			   <div class="clearfix"></div>
                 </div>
         </form>
-				<div class="footer-bottom">
-
-					<p> Bethel Estate &copy;20{{ date('y') }}  All rights  Reserved | Brought to you by <strong>OKB and Associates</strong> </p>
-
-					</div>
-					
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-</div>
+				
 
 		</div>		
 	</div>
+	</div>
+
+    <!--login ends!-->
+    <div class="footer-section" id="contact">
+        	<div class="row footee"> 
+        		<div class="col-md-3 footer-in">
+        			<a href="#"><img width="130" height="width" src="images/about-logo.png" /></a><br><br>
+        			<p>Bethel estate is a contempory and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way.</p>
+				</div>
+				<div class="col-md-3"></div>
+        		
+			<div class="col-md-3 footer-in">
+				<h3> Quick links </h3>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="#home" class="scroll"> Home </a></p>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="#services" class="scroll"> Facilities </a></p>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="/broschure"> Download Brochure </a></p>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="/downloadapp"> Download Agent App </a></p>
+			</div>
+			<div class="col-md-3 footer-in">
+        			<h3> Find us </h3>
+        			<p>30, Lanre Awolokun Street, Gbagada, Lagos.</p>
+        			<p>+234 806 941 6226</p>
+					<p>contact@bethelestate.com.ng</p><!--
+					<div class="social-icon">
+						<a href="#"><i class="icon1"></i></a>
+						<a href="#"><i class="icon2"></i></a>	
+					</div>-->
+				</div>
+			<div class="clearfix"></div>
+			</div>
+			<div class="footer-bottom">
+
+				<p> Bethel Estate &copy;20{{ date('y') }}  All rights Reserved | Brought to you by <a href="http://www.okbestate.com.ng"><img width="50" height="width" class="smalli" src="{{ asset('images/okblogo.png') }}"></a> </p>
+
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+					 		*/
+
+					 		$().UItoTop({ easingType: 'easeOutQuart' });
+
+					 	});
+						 function downloader(){
+							 D('brochure').innerHTML = 'processing';
+							 D('helper').innerHTML = '';
+							 setTimeout(call1, 2000);
+							 setTimeout('call2()', 3000);
+							 setTimeout('call3()', 6000);
+						 }
+							 function call1(){
+								D("helper").innerHTML = "Download Started"
+							 }
+							 function call2(){
+								D('brochure').innerHTML = 'Download Brochure';
+							 }
+							 function call3(){
+								D("helper").innerHTML = ""
+							 }
+					 </script>
+					 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+				</div>		
+			</div>
+			<script src='js/aos.js'></script>
+			<script>
+				AOS.init({
+					easing: 'ease-out-back',
+					duration: 1000
+				});
+
+			</script>
+
+		</div>
 	
 	
 </body>
