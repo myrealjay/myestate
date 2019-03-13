@@ -78,7 +78,7 @@
 	 <div class="headbg">
 	 <div class="widthy">
          <div class="header-top">
-      		 <div class="logo">
+      		 <div class="logo" id="home">
                 <a href="{{ url('') }}"><img src="images/logo.png" Width="100%" alt="Bethel-M12"/></a>
                 <!--<h2>Bethel</h2>-->
 			 </div>
@@ -94,7 +94,7 @@
 				<li style="font-size:14px"><a class="active" href="/" class="scroll"><span data-hover="Home">home</span></a> </li>
 				<li><a href="#services" class="scroll"><span data-hover="facilities">facilities</span></a> </li>
 				<li><a href="#work" class="scroll"><span data-hover="plans"><span>plans</span></a> </li>
-				<li><a href="#video"><span data-hover="Walk-through">Walk-through</span></a> </li><!--
+				<li><a href="#video" class="scroll"><span data-hover="Walk-through">Walk-through</span></a> </li><!--
 				<li><a href="{{ route('login') }}" ><span data-hover="login">login</span></a> </li>
 				<li><a href="{{ route('register') }}" ><span data-hover="purchase">purchase</span></a></li>
 				@if (!Auth::guest())
@@ -389,7 +389,7 @@
 			<div class="works-header">
 				<div data-aos="flip-left">
 					<h3> Floor Plans </h3>
-					<p>Information about the building floors</p>
+					<p>Information about the building Interior</p>
 				</div>
 				<div class="row">
 					<div class="col-md-4" data-aos="fade-right">
@@ -478,19 +478,19 @@
 			if(switcher == true){
 				D('crops').style.height = 0;
 				switcher = false;
-				D('shif').innerHTML = 'See less';
+				D('shif').innerHTML = 'Learn More';
 			} else {
 				D('crops').style.height = '';
 				switcher = true;
-				D('shif').innerHTML = 'Learn More';
+				D('shif').innerHTML = 'See less';
 			}
 		}
 	</script>
 	 <div class="partner">
 		 <div class="bg-guy"></div>
 		 <!--<h2>Our Pertner</h2>-->
-		 <div class="pat-img" data-aos="fade-up">
-			 <img width="100%" height="width" alt="Wema Bank Plc" src="images/wema-bank.jpg" />
+		 <div class="pat-img smalli" data-aos="fade-up">
+			 <a href="https://www.wemabank.com/"><img width="100%" height="width" alt="Wema Bank Plc" src="images/wema-bank.jpg" /></a>
 		 </div>
 	 </div>
 	<!--<div class="about-section" id="about" id="about">
@@ -570,26 +570,26 @@
         	<div class="row footee"> 
         		<div class="col-md-3 footer-in">
         			<a href="#"><img width="130" height="width" src="images/about-logo.png" /></a><br><br>
-        			<p>Bethel estate remains second to none, click the <b>BUY NOW</b> button below to place an order for any of the teraces. </p>
+        			<p>Bethel estate is a contempory and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way.</p>
 				</div>
 				<div class="col-md-3"></div>
         		
 			<div class="col-md-3 footer-in">
 				<h3> Quick links </h3>
-				<p><i class="fa fa-arrow-left shifter"></i><a href="#facilities" class="scroll"> Facilities </a></p>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="#home" class="scroll"> Home </a></p>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="#services" class="scroll"> Facilities </a></p>
 				<p><i class="fa fa-arrow-left shifter"></i><a href="/broschure"> Download Brochure </a></p>
 				<p><i class="fa fa-arrow-left shifter"></i><a href="/downloadapp"> Download Agent App </a></p>
-				<p><i class="fa fa-arrow-left shifter"></i><a href="#"> shbihsfbhfbksvhbkh </a></p>
 			</div>
 			<div class="col-md-3 footer-in">
         			<h3> Find us </h3>
         			<p>30, Lanre Awolokun Street, Gbagada, Lagos.</p>
         			<p>+234 806 941 6226</p>
-					<p>contact@bethelestate.com.ng</p>
+					<p>contact@bethelestate.com.ng</p><!--
 					<div class="social-icon">
 						<a href="#"><i class="icon1"></i></a>
 						<a href="#"><i class="icon2"></i></a>	
-					</div>
+					</div>-->
 				</div>
 			<div class="clearfix"></div>
 			</div>
