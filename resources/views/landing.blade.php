@@ -410,9 +410,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="arrow">
-				<a href="#about" class="scroll"><img src="images/arrow.png" alt=""/></a>
-			</div>
 		</div>
 		<!--Streetview--><!--
 		<div class ="row conga bod">
