@@ -687,7 +687,7 @@
 		<div class="modeBlack" id="fix6">
 			<div class="shelly" onclick="closemodal('fix6')"></div>
 			<div class="modeShell">
-			<img class="modImg" width="100%" height="width" src="images/bq.jpg" alt=""/>
+			<img class="modImg" width="100%" height="width" src="images/resort.jpg" alt=""/>
 			</div>
 		</div>
 		<!---end modal----->
@@ -695,7 +695,7 @@
 		<div class="modeBlack" id="fix7">
 			<div class="shelly" onclick="closemodal('fix7')"></div>
 			<div class="modeShell">
-			<img class="modImg" width="100%" height="width" src="images/resort.jpg" alt=""/>
+			<img class="modImg" width="100%" height="width" src="images/comercialcenter.jpg" alt=""/>
 			</div>
 		</div>
 		<!---end modal----->

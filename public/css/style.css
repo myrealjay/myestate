@@ -284,7 +284,7 @@ ul.wmuSliderPagination {
 .works-section{
 	padding:3em 0;
 	min-height: 100vh;
-	background: url("../images/wall.jpg") repeat;
+	background: url("../images/wallb.jpg") repeat;
 }
 .works-header{
 	text-align: center;
@@ -297,7 +297,7 @@ ul.wmuSliderPagination {
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	font-weight: 400;
-	color: #333;
+	color: #fff;
 }
 .works-header h3 span {
 	color: #555;
@@ -306,7 +306,7 @@ ul.wmuSliderPagination {
 	line-height: 1.5em;
 	
 	font-size: 15px;
-	color: #111;
+	color: #fff;
 	padding: 25px 0;
 }
 .portfolio-section{
