@@ -448,11 +448,12 @@
 			</div>
 		</div>
 	</div>-->
+			
 	<!-- portfolio-section-ends -->
 	<div class="video-sect" id="video">
 		<div class="holder" data-aos="zoom-in-left">
 			<div class="vid">
-				<iframe class="interior" src="https://www.youtube.com/embed/NqP1i5xHOnY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
+				<iframe class="interior" src="https://www.youtube.com/embed/MiIm1XJm_1A?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
