@@ -598,7 +598,7 @@
 			<div class="footer-bottom">
 
 				<p> Bethel Estate &copy;20{{ date('y') }}  All rights Reserved | Brought to you by <a href="http://www.okbestate.com.ng"><img width="50" height="width" class="smalli" src="{{ asset('images/okblogo.png') }}"></a> </p>
-
+				<!--Designed by Dapo Paul Ogunlana +2347036539719-->
 			</div>
 			<script type="text/javascript">
 				$(document).ready(function() {
