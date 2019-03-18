@@ -338,7 +338,7 @@
 
 
 					<h3>Facilities</h3>
-					<p>Bethel estate is a contempory and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way. The estate is in close proximity to several commercial centres such as banks, filling stations, grocery stores, supermarkets, pharmacies, gas plant and less than an hour drive to Lagos Island. </p>
+					<p>Bethel estate is a contemporary and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way. The estate is in close proximity to several commercial centres such as banks, filling stations, grocery stores, supermarkets, pharmacies, gas plant and less than an hour drive to Lagos Island. </p>
 					</div>
 					<div class="services-sectiongrids">
 						<div class="col-md-4 services-grid">
