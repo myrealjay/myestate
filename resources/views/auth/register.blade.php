@@ -12,6 +12,7 @@
 <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 	 <!------ Light Box ------>
@@ -185,23 +186,23 @@
     <div class="footer-section" id="contact">
         	<div class="row footee"> 
         		<div class="col-md-3 footer-in">
-        			<a href="#"><img width="130" height="width" src="images/about-logo.png" /></a><br><br>
-        			<p>Bethel estate is a contempory and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way.</p>
+        			<a href="/"><img width="130" height="width" src="images/about-logo.png" /></a><br><br>
+        			<p>Bethel estate is a contemporary and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way.</p><br>
 				</div>
 				<div class="col-md-3"></div>
         		
 			<div class="col-md-3 footer-in">
 				<h3> Quick links </h3>
-				<p><i class="fa fa-arrow-left shifter"></i><a href="#home" class="scroll"> Home </a></p>
-				<p><i class="fa fa-arrow-left shifter"></i><a href="#services" class="scroll"> Facilities </a></p>
+				<p><i class="fa fa-arrow-left shifter"></i><a href="/"> Home </a></p>
 				<p><i class="fa fa-arrow-left shifter"></i><a href="/broschure"> Download Brochure </a></p>
 				<p><i class="fa fa-arrow-left shifter"></i><a href="/downloadapp"> Download Agent App </a></p>
 			</div>
 			<div class="col-md-3 footer-in">
         			<h3> Find us </h3>
-        			<p>30, Lanre Awolokun Street, Gbagada, Lagos.</p>
-        			<p>+234 806 941 6226</p>
-					<p>contact@bethelestate.com.ng</p><!--
+        			<p>30, Lanre Awolokun Street, Gbagada Phase II, Lagos.</p>
+					<p>+234 809 888 0164</p>
+					<p>+234 809 888 0174</p>
+					<p>info@bethelestate.com.ng</p><br><!--
 					<div class="social-icon">
 						<a href="#"><i class="icon1"></i></a>
 						<a href="#"><i class="icon2"></i></a>	

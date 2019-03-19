@@ -571,7 +571,7 @@
         	<div class="row footee"> 
         		<div class="col-md-3 footer-in">
         			<a href="#home" class="scroll"><img width="130" height="width" src="images/about-logo.png" /></a><br><br>
-        			<p>Bethel estate is a contemporary and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way.</p>
+        			<p>Bethel estate is a contemporary and affordable estate located 30 minutes drive from the popular Ikeja city mall and directly off the Ikorodu Road dual carriage way.</p><br>
 				</div>
 				<div class="col-md-3"></div>
         		
@@ -587,7 +587,7 @@
         			<p>30, Lanre Awolokun Street, Gbagada Phase II, Lagos.</p>
 					<p>+234 809 888 0164</p>
 					<p>+234 809 888 0174</p>
-					<p>info@bethelestate.com.ng</p><!--
+					<p>info@bethelestate.com.ng</p><br><!--
 					<div class="social-icon">
 						<a href="#"><i class="icon1"></i></a>
 						<a href="#"><i class="icon2"></i></a>	
