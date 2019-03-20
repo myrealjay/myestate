@@ -198,9 +198,7 @@
 <div class="n-about">
 	<div class="container" data-aos="flip-left">
 		<h1>About Bethel-M12</h1>
-		<p>Bethel housing estate will comprise of block of 6 and block of 4 terrace duplexes with every unit built to world-class standards and will offer a convenient and comfortable living experience.
-		Bethel housing estate will comprise of block of 6 and block of 4 terrace duplexes with every unit built to world-class standards and will offer a convenient and comfortable living experience.
-		Bethel housing estate will comprise of block of 6 and block of 4 terrace duplexes with every unit built to world-class standards and will offer a convenient and comfortable living experience.
+		<p>Bethel housing estate will comprise of 27 blocks each containing 6 units of terrace duplexes with every unit built to world-class standards and will offer a convenient and comfortable living experience.
 		</p>
 	</div>
 </div><!--
